@@ -42,7 +42,7 @@ main p{
 }
 header{
     background-color: #050f19;
-    color: rgb(152, 149, 149) ;
+    color: rgb(234, 230, 230) ;
 }
 footer{
     background-color: #bfc3c6;
@@ -57,6 +57,7 @@ h2,h3{
     padding: 24px;
     border-radius: 18px;
 }
+
 /*ch es el ancho del caracter cero de la fuente en uso , tambien el valor 70 marca el rango de lectura que llaman comoda por linea o reglon, mas larga, la vista pierde al cambio de linea */
 
 /*Transformacion y espacio*/
@@ -83,7 +84,10 @@ blockquote p{
 
 /*aplicar estilos a identificadores o id*/
 #inicio {
-    background-color: rgb(54, 45, 70);
+    background-image: url(/unidad-03-css/sitio-demo/recursos/images.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
     padding: 20px ;
 }
 
