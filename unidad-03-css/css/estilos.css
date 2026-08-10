@@ -19,18 +19,37 @@ body {
 }/*esta regla define la fuente y el color del texto de la fuente del documento*/
 h1{
     color: #e9ecef;
-    font-size: 32px;
     text-align: center;
 }
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+p{
+    font-size: 1rem;
+    font-weight: 00;  
+}
+main p{
+    max-width: 70ch;
+}
+/*ch es el ancho del caracter cero de la fuente en uso , tambien el valor 70 marca el rango de lectura que llaman comoda por linea o reglon, mas larga, la vista pierde al cambio de linea */
 /*aplicar estilos a clases*/
 .destacado{
-    background-color: #0eea0e;
+    background-color: #110451;
     padding: 10px 15px 15px 10px; /*aplica como las manillas del reloj :arriba - derecha-abajo-izquierda*/
 }
 
 /*aplicar estilos a identificadores o id*/
 #inicio {
-    background-color: darkorange;
+    background-color: rgb(78, 69, 95);
     padding: 20px ;
 }
 
