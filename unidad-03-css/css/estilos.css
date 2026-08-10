@@ -1,30 +1,93 @@
 /*css/estilos.css*/
 /*Reset basico*/
-
+/*100% del tamaño que el usuario configuro 
+por omision son 16px, */
+html{
+    font-size: 100%
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }/*esta regla elimina los margenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y el alto del elemento*/
 body {
+    font-size: 1rem;
+    line-height: 1.6;
     font-family: Arial, sans-serif;
-    color: #efe4e4;
-    background-color: rgb(109, 106, 106);
+    color: #f3f3f5;
+    background-color: #333
 }/*esta regla define la fuente y el color del texto de la fuente del documento*/
 h1{
     color: #e9ecef;
-    font-size: 32px;
     text-align: center;
 }
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+p{
+    font-size: 1rem;
+    font-weight: 600;  
+}
+main p{
+    max-width: 70ch;
+}
+header{
+    background-color: #050f19;
+    color: rgb(234, 230, 230) ;
+}
+footer{
+    background-color: #bfc3c6;
+    padding: 20px;
+    margin-top: 32px;
+}
+h2,h3{
+    color: #e0e0e3;
+}
+.portada-texto{
+    color: rgba(0,0,0,35);
+    padding: 24px;
+    border-radius: 18px;
+}
+
+/*ch es el ancho del caracter cero de la fuente en uso , tambien el valor 70 marca el rango de lectura que llaman comoda por linea o reglon, mas larga, la vista pierde al cambio de linea */
+
+/*Transformacion y espacio*/
+header nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+main  a {
+    text-decoration: none;
+    border-bottom: 1px solid #a9aeb3;
+}
+blockquote p{
+    font-style: italic;
+    color: #c8c7c7;
+}
+
 /*aplicar estilos a clases*/
 .destacado{
-    background-color: #0eea0e;
+    background-color: #110451;
     padding: 10px 15px 15px 10px; /*aplica como las manillas del reloj :arriba - derecha-abajo-izquierda*/
 }
 
 /*aplicar estilos a identificadores o id*/
 #inicio {
-    background-color: darkorange;
+    background-image: url(/unidad-03-css/sitio-demo/recursos/images.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
     padding: 20px ;
 }
 
@@ -41,7 +104,7 @@ nav a:hover{
 
 /*pseudo clase nth-child: filas cebra en la tabla*/
 tbody tr:nth-child(even){
-    background-color: rgb(88, 88, 86);
+    background-color: rgb(174, 174, 172);
 }
 
 /*pseudo elemento : first letter y selection*/

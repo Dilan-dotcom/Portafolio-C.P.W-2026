@@ -11,12 +11,17 @@ body{ font-family: Georgia, 'Times New Roman', Times, serif;
 h1{
     color: rgb(252, 252, 252);
     font-family:'Times New Roman', Times, serif ;
-    font-size: 16px;
-    text-align: center;}
+    font-size: 66px;
+    text-align: center;
+    letter-spacing: 10px;
+   
+}
+    
 h2{
     color: azure;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    text-decoration:underline;
 }
 
 
@@ -27,36 +32,67 @@ p{
     padding: 10px;
 }
 .resaltado{
-    background-color:blue ;
-    padding: 20px 25px 20px 25px;
+    background-color:rgb(58, 58, 61) ;
+    padding: 15px 10px 15px 10px;
 }
 nav a{
-    color: rgb(18, 218, 31);
+    color: rgb(229, 230, 229);
+    text-decoration: none;
 
 }
 #fin{
-    color: rgb(247, 4, 49);
+    color: rgb(104, 61, 68);
     padding: 20px;
+    text-align: center;
 }
 
 nav a {
-    color:rgb(7, 142, 221);
+    color:rgb(234, 238, 240);
     margin-right: 20px;
     transition: color 0.3s;
+
 }
 
 nav a:hover{
-color: lawngreen;
+color: rgb(22, 2, 37);
 }
 tbody tr:nth-child(even){
-    background-color: blueviolet;
+    background-color: rgb(239, 235, 242);
 }
 p::first-letter{
     font-size: larger;
     font-weight: bolder;
-    color: olive;
+    color: rgb(12, 12, 13);
 }
 body{
     font-family: "Protest Guerrilla";
 }
+header{
+    background-image: url(/unidad-03-css/sitio-personalcontratacion-guardas/Recursos2/images\ \(1\).jpg);
+    background-size: cover;
+    background-position: right;
+    padding: 1px;
+   
 
+
+}
+#intro {
+    text-transform: uppercase;
+    color: rgb(249, 255, 248);
+    text-align: center;
+
+}
+header nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(235, 226, 226);
+}
+.tabla{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-decoration: underline;
+     color: rgb(25, 40, 27);
+}
