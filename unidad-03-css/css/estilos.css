@@ -35,7 +35,7 @@ h3{
 }
 p{
     font-size: 1rem;
-    font-weight: 00;  
+    font-weight: 600;  
 }
 main p{
     max-width: 70ch;
@@ -53,7 +53,7 @@ h2,h3{
     color: #e0e0e3;
 }
 .portada-texto{
-    color: rgda(0,0,0,35);
+    color: rgba(0,0,0,35);
     padding: 24px;
     border-radius: 18px;
 }
