@@ -33,7 +33,7 @@ p{
 }
 .resaltado{
     background-color:rgb(58, 58, 61) ;
-    padding: 20px 25px 20px 25px;
+    padding: 15px 10px 15px 10px;
 }
 nav a{
     color: rgb(229, 230, 229);
@@ -41,7 +41,7 @@ nav a{
 
 }
 #fin{
-    color: rgb(255, 0, 47);
+    color: rgb(104, 61, 68);
     padding: 20px;
     text-align: center;
 }
@@ -93,6 +93,6 @@ header nav a {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 2rem;
-    text-decoration: none;
-     color: rgb(51, 55, 58);
+    text-decoration: underline;
+     color: rgb(25, 40, 27);
 }
