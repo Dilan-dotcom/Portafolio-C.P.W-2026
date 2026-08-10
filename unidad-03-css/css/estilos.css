@@ -45,12 +45,17 @@ header{
     color: rgb(152, 149, 149) ;
 }
 footer{
-    background-color: #4e5051;
+    background-color: #bfc3c6;
     padding: 20px;
     margin-top: 32px;
 }
 h2,h3{
     color: #e0e0e3;
+}
+.portada-texto{
+    color: rgda(0,0,0,35);
+    padding: 24px;
+    border-radius: 18px;
 }
 /*ch es el ancho del caracter cero de la fuente en uso , tambien el valor 70 marca el rango de lectura que llaman comoda por linea o reglon, mas larga, la vista pierde al cambio de linea */
 
@@ -63,11 +68,11 @@ header nav a {
 }
 main  a {
     text-decoration: none;
-    border-bottom: 1px solid #1f4e79;
+    border-bottom: 1px solid #a9aeb3;
 }
 blockquote p{
     font-style: italic;
-    color: #555;
+    color: #c8c7c7;
 }
 
 /*aplicar estilos a clases*/
@@ -78,7 +83,7 @@ blockquote p{
 
 /*aplicar estilos a identificadores o id*/
 #inicio {
-    background-color: rgb(78, 69, 95);
+    background-color: rgb(54, 45, 70);
     padding: 20px ;
 }
 
