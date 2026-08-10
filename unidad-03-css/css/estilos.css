@@ -14,8 +14,8 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     font-family: Arial, sans-serif;
-    color: #efe4e4;
-    background-color: rgb(109, 106, 106);
+    color: #f3f3f5;
+    background-color: #333
 }/*esta regla define la fuente y el color del texto de la fuente del documento*/
 h1{
     color: #e9ecef;
@@ -40,6 +40,18 @@ p{
 main p{
     max-width: 70ch;
 }
+header{
+    background-color: #050f19;
+    color: rgb(152, 149, 149) ;
+}
+footer{
+    background-color: #4e5051;
+    padding: 20px;
+    margin-top: 32px;
+}
+h2,h3{
+    color: #e0e0e3;
+}
 /*ch es el ancho del caracter cero de la fuente en uso , tambien el valor 70 marca el rango de lectura que llaman comoda por linea o reglon, mas larga, la vista pierde al cambio de linea */
 
 /*Transformacion y espacio*/
@@ -57,6 +69,7 @@ blockquote p{
     font-style: italic;
     color: #555;
 }
+
 /*aplicar estilos a clases*/
 .destacado{
     background-color: #110451;
@@ -82,7 +95,7 @@ nav a:hover{
 
 /*pseudo clase nth-child: filas cebra en la tabla*/
 tbody tr:nth-child(even){
-    background-color: rgb(88, 88, 86);
+    background-color: rgb(174, 174, 172);
 }
 
 /*pseudo elemento : first letter y selection*/
