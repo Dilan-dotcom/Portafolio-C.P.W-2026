@@ -12,11 +12,16 @@ h1{
     color: rgb(252, 252, 252);
     font-family:'Times New Roman', Times, serif ;
     font-size: 66px;
-    text-align: center;}
+    text-align: center;
+    letter-spacing: 10px;
+   
+}
+    
 h2{
     color: azure;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    text-decoration:underline;
 }
 
 
@@ -57,7 +62,7 @@ tbody tr:nth-child(even){
 p::first-letter{
     font-size: larger;
     font-weight: bolder;
-    color: olive;
+    color: rgb(12, 12, 13);
 }
 body{
     font-family: "Protest Guerrilla";
@@ -67,6 +72,7 @@ header{
     background-size: cover;
     background-position: right;
     padding: 1px;
+   
 
 
 }
@@ -88,4 +94,5 @@ header nav a {
     letter-spacing: 2px;
     font-size: 2rem;
     text-decoration: none;
+     color: rgb(51, 55, 58);
 }
