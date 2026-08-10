@@ -41,6 +41,22 @@ main p{
     max-width: 70ch;
 }
 /*ch es el ancho del caracter cero de la fuente en uso , tambien el valor 70 marca el rango de lectura que llaman comoda por linea o reglon, mas larga, la vista pierde al cambio de linea */
+
+/*Transformacion y espacio*/
+header nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+main  a {
+    text-decoration: none;
+    border-bottom: 1px solid #1f4e79;
+}
+blockquote p{
+    font-style: italic;
+    color: #555;
+}
 /*aplicar estilos a clases*/
 .destacado{
     background-color: #110451;
