@@ -78,8 +78,8 @@ blockquote p{
 
 /*aplicar estilos a clases*/
 .destacado{
-    background-color: #110451;
-    padding: 10px 15px 15px 10px; /*aplica como las manillas del reloj :arriba - derecha-abajo-izquierda*/
+    background-color: #8a898f;
+    padding: 10px 20px; /*aplica como las manillas del reloj :arriba - derecha-abajo-izquierda*/
 }
 
 /*aplicar estilos a identificadores o id*/
@@ -88,7 +88,7 @@ blockquote p{
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    padding: 20px ;
+    padding: 30px ;
 }
 
 /*aplicar estilos a enlaces dentro del nav*/
@@ -122,4 +122,23 @@ article p::first-letter{
 body{
     font-family: "Poppins",Arial, Helvetica, sans-serif;
     line-height: 1.6;
+}
+aside{
+    padding: 20px;
+    border: 2px solid #c55a11; /*esto tambien puede ser afectado usando lo de las manecillas*/
+    border-radius: 8px;
+}
+/*es este caso el padding aplica a los 4 lados a la vez   padding:10px 20px si se hace esto el padding afectaria vertical y horizontal y no van con comas si solo se deja un valor en px afecta a toda la caja    padding:10px 20px 15px 5 px  aplica  a los 4 lados de la caja y afecta como lo de las manillas de reloj arribederecha abajo y izquierda */
+/*apicar lado por lado cada medida
+padding-top 10px aplica arriba 
+padding-rigth 10px aplica a la derecha 
+padding-botton 10px aplica aabajo
+padding-left 10px aplica izquierda */
+
+/*aplicamos a la tabla.html*/
+th, td {
+    padding: 10px;
+}
+fieldset{
+    padding: 16px;
 }
