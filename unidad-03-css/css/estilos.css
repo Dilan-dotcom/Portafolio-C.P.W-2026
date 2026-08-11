@@ -17,6 +17,11 @@ body {
     color: #f3f3f5;
     background-color: #333
 }/*esta regla define la fuente y el color del texto de la fuente del documento*/
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    /*el 0 aplica ala parte vertical y horizontal, el auto reparte el espacio sobrande por ambos lados, lo centra en un elemento  con acho ilimitado */
+}
 h1{
     color: #e9ecef;
     text-align: center;
@@ -35,7 +40,8 @@ h3{
 }
 p{
     font-size: 1rem;
-    font-weight: 600;  
+    font-weight: 600;
+    margin-bottom: 16px;  
 }
 main p{
     max-width: 70ch;
@@ -51,6 +57,7 @@ footer{
 }
 h2,h3{
     color: #e0e0e3;
+    margin-bottom: 12px;
 }
 .portada-texto{
     color: rgba(0,0,0,35);
@@ -141,4 +148,7 @@ th, td {
 }
 fieldset{
     padding: 16px;
+}
+section{
+    margin-bottom: 32px;
 }
