@@ -172,7 +172,7 @@ header nav ul{
     list-style-type: none;
     /*quita las viñetas y el subrayado (en este caso en el nav)*/
 }
-main:ul main ol{
+main ul, main ol{
     padding: 24px;
     margin-bottom: 16px;
 }
