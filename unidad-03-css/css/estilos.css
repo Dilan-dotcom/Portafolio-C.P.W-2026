@@ -17,6 +17,12 @@ body {
     color: #f3f3f5;
     background-color: #333
 }/*esta regla define la fuente y el color del texto de la fuente del documento*/
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+     /*el 0 aplica ala parte vertical y horizontal, el auto reparte el espacio sobrande por ambos lados, lo centra en un elemento  con acho ilimitado */
+}
+
 h1{
     color: #e9ecef;
     text-align: center;
@@ -35,7 +41,8 @@ h3{
 }
 p{
     font-size: 1rem;
-    font-weight: 600;  
+    font-weight: 600;
+    margin-bottom: 16px;  
 }
 main p{
     max-width: 70ch;
@@ -51,6 +58,7 @@ footer{
 }
 h2,h3{
     color: #e0e0e3;
+    margin-bottom: 12px;
 }
 .portada-texto{
     color: rgba(0,0,0,35);
@@ -66,6 +74,8 @@ header nav a {
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
 }
 main  a {
     text-decoration: none;
@@ -78,8 +88,8 @@ blockquote p{
 
 /*aplicar estilos a clases*/
 .destacado{
-    background-color: #110451;
-    padding: 10px 15px 15px 10px; /*aplica como las manillas del reloj :arriba - derecha-abajo-izquierda*/
+    background-color: #8a898f;
+    padding: 10px 20px; /*aplica como las manillas del reloj :arriba - derecha-abajo-izquierda*/
 }
 
 /*aplicar estilos a identificadores o id*/
@@ -88,7 +98,7 @@ blockquote p{
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    padding: 20px ;
+    padding: 30px ;
 }
 
 /*aplicar estilos a enlaces dentro del nav*/
@@ -123,3 +133,72 @@ body{
     font-family: "Poppins",Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
+aside{
+    padding: 20px;
+    border: 2px solid #c55a11; /*esto tambien puede ser afectado usando lo de las manecillas*/
+    border-radius: 8px;
+}
+/*es este caso el padding aplica a los 4 lados a la vez   padding:10px 20px si se hace esto el padding afectaria vertical y horizontal y no van con comas si solo se deja un valor en px afecta a toda la caja    padding:10px 20px 15px 5 px  aplica  a los 4 lados de la caja y afecta como lo de las manillas de reloj arribederecha abajo y izquierda */
+/*apicar lado por lado cada medida
+padding-top 10px aplica arriba 
+padding-rigth 10px aplica a la derecha 
+padding-botton 10px aplica aabajo
+padding-left 10px aplica izquierda */
+
+/*aplicamos a la tabla.html*/
+th, td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+
+}
+thead th{
+    background-color: #1f4e79;
+    color: #e9ecef;
+    /*trabaja encabezados de la tabla*/
+}
+tfoot td{
+padding: 12px; 
+font-style: italic;
+background-color: #686c71;   
+}
+fieldset{
+    padding: 16px;
+}
+section{
+    margin-bottom: 32px;
+}
+header nav ul{
+    list-style-type: none;
+    /*quita las viñetas y el subrayado (en este caso en el nav)*/
+}
+main ul, main ol{
+    padding: 24px;
+    margin-bottom: 16px;
+}
+main li{
+    margin-bottom: 6px;
+}
+/*lista descriptiva */
+#glosario dt{
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+#glosario dd{
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+/*la sangria del dd es lo que hace visible la relacion entre el terminonnynsu definicion o descripcion */
+/*la tabla de colaendario*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+caption{
+    padding: 8px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
