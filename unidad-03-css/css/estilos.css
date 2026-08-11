@@ -17,11 +17,12 @@ body {
     color: #f3f3f5;
     background-color: #333
 }/*esta regla define la fuente y el color del texto de la fuente del documento*/
-main{
-    max-width: 1000px;
+.contenedor{
+    max-width: 1200px;
     margin: 0 auto;
-    /*el 0 aplica ala parte vertical y horizontal, el auto reparte el espacio sobrande por ambos lados, lo centra en un elemento  con acho ilimitado */
+     /*el 0 aplica ala parte vertical y horizontal, el auto reparte el espacio sobrande por ambos lados, lo centra en un elemento  con acho ilimitado */
 }
+
 h1{
     color: #e9ecef;
     text-align: center;
@@ -73,6 +74,8 @@ header nav a {
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
 }
 main  a {
     text-decoration: none;
@@ -145,6 +148,19 @@ padding-left 10px aplica izquierda */
 /*aplicamos a la tabla.html*/
 th, td {
     padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+
+}
+thead th{
+    background-color: #1f4e79;
+    color: #e9ecef;
+    /*trabaja encabezados de la tabla*/
+}
+tfoot td{
+padding: 12px; 
+font-style: italic;
+background-color: #686c71;   
 }
 fieldset{
     padding: 16px;
@@ -152,3 +168,37 @@ fieldset{
 section{
     margin-bottom: 32px;
 }
+header nav ul{
+    list-style-type: none;
+    /*quita las viñetas y el subrayado (en este caso en el nav)*/
+}
+main:ul main ol{
+    padding: 24px;
+    margin-bottom: 16px;
+}
+main li{
+    margin-bottom: 6px;
+}
+/*lista descriptiva */
+#glosario dt{
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+#glosario dd{
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+/*la sangria del dd es lo que hace visible la relacion entre el terminonnynsu definicion o descripcion */
+/*la tabla de colaendario*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+caption{
+    padding: 8px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
