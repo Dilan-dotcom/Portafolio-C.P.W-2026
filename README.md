@@ -128,7 +128,7 @@ Proyecto propio construido de forma autónoma.
 |  S11   | Introducción a CSS         | introduccion a css sintaxis , estilos y validacion            | [ver](/unidad-03-css/sitio-personalcontratacion-guardas/css/estilos1.css) | [ver](/recursos/Captura%20de%20pantallasesion%2011%20css.png) |
 |  S12   | Selectores y pseudo-clases |selectores ,pseudo clases,pseudo elementos practica| [ver](/unidad-03-css/sitio-personalcontratacion-guardas/css/estilos1.css) | [ver](/recursos/Captura%20de%20pantalla%20s11%20selectores.png) |
 |  S13   | Tipografía y color         |trabajamos gerarquia tipografica , colores ,fonos yunidades absolutas y relativas            | [ver](/unidad-03-css/css/estilos.css) | [ver](/recursos/Captura%20sesion%2013.png) |
-|  S14   | Modelo de cajas            |             | [ver](unidad-03/) | [ver](recursos/) |
+|  S14   | Modelo de cajas            |    modelos de cajas y padding         | [ver](/unidad-03-css/css/estilos.css) | [ver](/recursos/Captura%20de%20pantalla%202026-07-24%20145405.png) |
 |  S15   | Display y posicionamiento  |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S16   | Flexbox                    |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S17   | CSS Grid                   |             | [ver](unidad-03/) | [ver](recursos/) |
