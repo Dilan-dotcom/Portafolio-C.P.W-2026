@@ -46,9 +46,10 @@ p{
 }
 main p{
     max-width: 70ch;
+    
 }
 header{
-    background-color: #050f19;
+    background-color: #cfd5dc;
     color: rgb(234, 230, 230) ;
 }
 footer{
@@ -74,8 +75,8 @@ header nav a {
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
-    display: inline-block;
-    padding: 10px 15px;
+    padding: 20px 15 px;
+    margin: 15px;
 }
 main  a {
     text-decoration: none;
@@ -85,11 +86,14 @@ blockquote p{
     font-style: italic;
     color: #c8c7c7;
 }
-
+header nav li{
+    display: inline-block;
+    
+}
 /*aplicar estilos a clases*/
 .destacado{
-    background-color: #8a898f;
-    padding: 10px 20px; /*aplica como las manillas del reloj :arriba - derecha-abajo-izquierda*/
+    background-color: #646369;
+    padding: 10px 15px 15px 10px; /*aplica como las manillas del reloj :arriba - derecha-abajo-izquierda*/
 }
 
 /*aplicar estilos a identificadores o id*/
@@ -133,72 +137,18 @@ body{
     font-family: "Poppins",Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
-aside{
-    padding: 20px;
-    border: 2px solid #c55a11; /*esto tambien puede ser afectado usando lo de las manecillas*/
-    border-radius: 8px;
-}
-/*es este caso el padding aplica a los 4 lados a la vez   padding:10px 20px si se hace esto el padding afectaria vertical y horizontal y no van con comas si solo se deja un valor en px afecta a toda la caja    padding:10px 20px 15px 5 px  aplica  a los 4 lados de la caja y afecta como lo de las manillas de reloj arribederecha abajo y izquierda */
-/*apicar lado por lado cada medida
-padding-top 10px aplica arriba 
-padding-rigth 10px aplica a la derecha 
-padding-botton 10px aplica aabajo
-padding-left 10px aplica izquierda */
-
-/*aplicamos a la tabla.html*/
-th, td {
-    padding: 10px;
-    border: 1px solid #dddddd;
-    text-align: left;
-
-}
-thead th{
-    background-color: #1f4e79;
-    color: #e9ecef;
-    /*trabaja encabezados de la tabla*/
-}
-tfoot td{
-padding: 12px; 
-font-style: italic;
-background-color: #686c71;   
-}
-fieldset{
-    padding: 16px;
-}
-section{
-    margin-bottom: 32px;
-}
-header nav ul{
+header ul li{
     list-style-type: none;
-    /*quita las viñetas y el subrayado (en este caso en el nav)*/
 }
-main ul, main ol{
-    padding: 24px;
-    margin-bottom: 16px;
+*{
+    max-width: 1000px;
+    margin: 0 auto;
 }
-main li{
-    margin-bottom: 6px;
-}
-/*lista descriptiva */
-#glosario dt{
-    font-weight: 700;
-    margin-top: 12px;
-}
+/*los 5 valores de position 
+static=valor por omision 
+relative=se desplaza desde su propia posicion y los elementos vecinos no se mueven
+absolute=se ubica rspecto al ancestro mas cercano
+fixed=se ubica repecto a la ventana y no se mueve al desplazarse 
+sticky=fluye normal hasta llegar a un umbral(llamese alguna pate de la pagina), y entonces se pega */
 
-#glosario dd{
-    margin-left: 20px;
-    margin-bottom: 8px;
-}
-/*la sangria del dd es lo que hace visible la relacion entre el terminonnynsu definicion o descripcion */
-/*la tabla de colaendario*/
-table{
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 24px;
-}
-caption{
-    padding: 8px;
-    font-weight: 800;
-    margin-bottom: 24px;
-}
-
+/*patron para esta ocasion*/
