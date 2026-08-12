@@ -175,3 +175,6 @@ main ul,main ol{
     margin: 12px;
     padding: 12px;
 }
+.figura-destacada{
+    position: relative;/*posiciona como elemento padre y este no se mueve.Es referencia de hijos absolutos*/
+}
