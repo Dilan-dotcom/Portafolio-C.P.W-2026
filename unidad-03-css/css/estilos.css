@@ -160,8 +160,8 @@ aside{
     
 
 blockquote{
-    font-style: ;
-
+    font-style: italic;
+    border-left: 4px solid #1f4e79;
 }
 section{
     margin-bottom: 32px;
