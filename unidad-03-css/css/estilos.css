@@ -75,7 +75,7 @@ header nav a {
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
-    padding: 20px 15 px;
+    padding: 20px 15px;
     margin: 15px;
 }
 main  a {
@@ -98,11 +98,21 @@ header nav li{
 
 /*aplicar estilos a identificadores o id*/
 #inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;/*vista fija con respecto a la ventana*/
     background-image: url(/unidad-03-css/sitio-demo/recursos/images.jpg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
     padding: 30px ;
+    z-index: 100; /*cuanto mayor es el numero mas al frente va a esta*/
+}
+#inico{
+    position: sticky; /*fluye normal al llegar a ariibsa o limite de su navegador*/
+    top: 0;
+
 }
 
 /*aplicar estilos a enlaces dentro del nav*/
@@ -136,14 +146,12 @@ article p::first-letter{
 body{
     font-family: "Poppins",Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    padding-top: 180px;
 }
 header ul li{
     list-style-type: none;
 }
-*{
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
 /*los 5 valores de position 
 static=valor por omision 
 relative=se desplaza desde su propia posicion y los elementos vecinos no se mueven
@@ -160,8 +168,8 @@ aside{
     
 
 blockquote{
-    font-style: ;
-
+    font-style: italic;
+    border-left: 4px solid #1f4e79;
 }
 section{
     margin-bottom: 32px;
@@ -175,3 +183,19 @@ main ul,main ol{
     margin: 12px;
     padding: 12px;
 }
+.figura-destacada{
+    position: relative;/*posiciona como elemento padre y este no se mueve.Es referencia de hijos absolutos*/
+}
+.etiqueta{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #c55a11;
+    color: #e0e0e3;
+    border-radius: 4px;
+    font-size: 0.075rem;
+    z-index: 10;
+}
+/*z index solo funciona en elementos que tengan un position declarado
+si el static no funciona
+escala de valores de z index 10 para elementos posicionados dentro del contenido y100 para la cabecera fija y 1000 para ventanas emergentes y capas fijas y 9999 no hace falta usarlo casi nunca pirque no nos deja margen a otro valor por encima  */
