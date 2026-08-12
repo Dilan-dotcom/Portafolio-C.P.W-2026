@@ -98,11 +98,20 @@ header nav li{
 
 /*aplicar estilos a identificadores o id*/
 #inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;/*vista fija con respecto a la ventana*/
     background-image: url(/unidad-03-css/sitio-demo/recursos/images.jpg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
     padding: 30px ;
+}
+#inico{
+    position: sticky; /*fluye normal al llegar a ariibsa o limite de su navegador*/
+    top: 0;
+
 }
 
 /*aplicar estilos a enlaces dentro del nav*/
@@ -136,14 +145,12 @@ article p::first-letter{
 body{
     font-family: "Poppins",Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    padding-top: 180px;
 }
 header ul li{
     list-style-type: none;
 }
-*{
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
 /*los 5 valores de position 
 static=valor por omision 
 relative=se desplaza desde su propia posicion y los elementos vecinos no se mueven
