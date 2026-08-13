@@ -113,7 +113,7 @@ header nav{
     padding: 10px 15px 15px 10px; /*aplica como las manillas del reloj :arriba - derecha-abajo-izquierda*/
 }
 
-/*aplicar estilos a identificadores o id*/
+/*aplicar estilos a identificadores o i1d*/
 #inicio {
     display: flex;
     justify-content: space-between;
