@@ -109,7 +109,7 @@ header nav li{
     padding: 30px ;
     z-index: 100; /*cuanto mayor es el numero mas al frente va a esta*/
 }
-#inico{
+#inicio{
     position: sticky; /*fluye normal al llegar a ariibsa o limite de su navegador*/
     top: 0;
 
