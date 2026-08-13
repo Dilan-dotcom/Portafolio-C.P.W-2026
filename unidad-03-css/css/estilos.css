@@ -225,14 +225,21 @@ escala de valores de z index 10 para elementos posicionados dentro del contenido
     display: flex;
     gap: 20px;
     flex: 1px;
-    padding: 20px;
+   /* padding: 20px;
     border: 5px solid black;
     border-radius: 5px;
-    flex-grow: 1;/*cuando crece si sotra espacio si lo tenemos en punto cero no crece pero si lo tenemos con una numeracion como uno si crece*/
+    flex-grow: 1;/*cuando crece si sotra espacio si lo tenemos en punto cero no crece pero si lo tenemos con una numeracion como uno si crece
     flex-shrink: 1;
-    flex-basis: 0;
+    flex-basis: 0;*/
+    flex-wrap: wrap; /*border wrap salta hacia abajo , wrap reverse salta hacia arriba nowrap no salta*/
+    border: 1px solid black;
+    border-radius: 8px;
 }
 .tarjetas{
     display: flex;
     flex: 2;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 8px;
 }
