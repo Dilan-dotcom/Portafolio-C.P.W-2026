@@ -87,7 +87,11 @@ blockquote p{
     color: #c8c7c7;
 }
 header nav li{
-    display: inline-block;
+    display: flex; /*activa flex box y coloca en fila horizontal los elementos  por defecto*/
+    list-style-type: none;/*quita viñetas y subrayado*/
+    
+   /* display: inline-block;
+    margin: 15px; pone en linea elementos en la nav lo del inicio contacto y eso*/
     
 }
 /*aplicar estilos a clases*/
