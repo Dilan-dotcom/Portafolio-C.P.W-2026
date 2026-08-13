@@ -100,6 +100,9 @@ header nav ul{
    /* display: inline-block;
     margin: 15px; pone en linea elementos en la nav lo del inicio contacto y eso*/
 }
+header nav{
+    align-self: center;/*anula aling-items para  el elemento especifico*/
+}
 /*aplicar estilos a clases*/
 .destacado{
     background-color: #646369;
@@ -110,23 +113,24 @@ header nav ul{
 #inicio {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;/*vista fija con respecto a la ventana*/
     background-image: url(/unidad-03-css/sitio-demo/recursos/images.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     padding: 12px 20px ;
     z-index: 100; /*cuanto mayor es el numero mas al frente va a esta*/
 }
 #inicio{
     position: sticky; /*fluye normal al llegar a ariibsa o limite de su navegador*/
-    top: 0;
-
+    top: 10; 
+    
 }
+
 
 /*aplicar estilos a enlaces dentro del nav*/
 nav a {
@@ -159,7 +163,7 @@ article p::first-letter{
 body{
     font-family: "Poppins",Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    padding-top: 180px;
+    padding-top: 1px;
 }
 header ul li{
     list-style-type: none;
@@ -212,3 +216,8 @@ main ul,main ol{
 /*z index solo funciona en elementos que tengan un position declarado
 si el static no funciona
 escala de valores de z index 10 para elementos posicionados dentro del contenido y100 para la cabecera fija y 1000 para ventanas emergentes y capas fijas y 9999 no hace falta usarlo casi nunca pirque no nos deja margen a otro valor por encima  */
+.centrado{
+    display: flex;
+    justify-content: center;/*centrado horizontal*/
+    align-items: center;/*centrado vertical*/
+}
