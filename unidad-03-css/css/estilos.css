@@ -86,13 +86,19 @@ blockquote p{
     font-style: italic;
     color: #c8c7c7;
 }
-header nav li{
+header nav ul{
     display: flex; /*activa flex box y coloca en fila horizontal los elementos  por defecto*/
     list-style-type: none;/*quita viñetas y subrayado*/
-    
+    gap: 15px;/*separacion uniforme entre elementos*/
+    justify-content: space-evenly;
+    /*flex start coloca elementos al inicio de la fila
+    flex end pone los elementos de la fila al final
+    center coloca elementos en el centro
+    space betwen coloca elemntos extremos pegados y acomoda lo demas uniformemente 
+    space around espacio al rededor de cada uno
+    space evenly coloca todos los espacios iguales*/
    /* display: inline-block;
     margin: 15px; pone en linea elementos en la nav lo del inicio contacto y eso*/
-    
 }
 /*aplicar estilos a clases*/
 .destacado{
@@ -102,6 +108,9 @@ header nav li{
 
 /*aplicar estilos a identificadores o id*/
 #inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -110,7 +119,7 @@ header nav li{
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    padding: 30px ;
+    padding: 12px 20px ;
     z-index: 100; /*cuanto mayor es el numero mas al frente va a esta*/
 }
 #inicio{
@@ -183,9 +192,9 @@ main ul,main ol{
     margin-bottom: 32px;
 }
 .contenedor{
-    max-width: 12px;
+    max-width: 20px;
     margin: 12px;
-    padding: 12px;
+    padding: 11px;
 }
 .figura-destacada{
     position: relative;/*posiciona como elemento padre y este no se mueve.Es referencia de hijos absolutos*/
