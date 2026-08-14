@@ -201,9 +201,10 @@ main ul,main ol{
     margin-bottom: 32px;
 }
 .contenedor{
-    max-width: 20px;
-    margin: 10px;
-    padding: 10px;
+    max-width: 800px;
+    margin: 0px;
+    padding: 0px;
+    
 }
 .figura-destacada{
     position: relative;/*posiciona como elemento padre y este no se mueve.Es referencia de hijos absolutos*/
