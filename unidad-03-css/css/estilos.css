@@ -241,11 +241,18 @@ escala de valores de z index 10 para elementos posicionados dentro del contenido
     border: 1px solid black;
     border-radius: 8px;
 }
-.tarjetas{
+/*.tarjetas{
     display: flex;
     flex: 2;
     gap: 20px;
     flex-wrap: wrap;
     border: 1px solid black;
     border-radius: 8px;
+}*/
+.galeria-grid{
+    display: grid;/*activa grid al igual que flexbox , se declara en el contenedor*/
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 20px;
+    
 }
