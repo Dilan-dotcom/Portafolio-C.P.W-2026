@@ -266,6 +266,10 @@ escala de valores de z index 10 para elementos posicionados dentro del contenido
 }
 .destacado {
     grid-row: span 2;  /*con filas */
+    width: 100px;
+    height: 200px;
+    object-fit: cover;/*recorta por el centro en vez de reformar*/
+    border-radius: 6px;
 }
 #contenido {
     display: grid;
