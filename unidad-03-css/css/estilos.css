@@ -115,6 +115,7 @@ header nav{
 
 /*aplicar estilos a identificadores o i1d*/
 #inicio {
+    
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -182,7 +183,7 @@ sticky=fluye normal hasta llegar a un umbral(llamese alguna pate de la pagina), 
 
 /*patron para esta ocasion*/
 aside{
-    padding: 12px;
+    padding: 10px;
     border-radius: 6px;
     border: 1px solid #340f0f
 }
@@ -200,9 +201,10 @@ main ul,main ol{
     margin-bottom: 32px;
 }
 .contenedor{
-    max-width: 20px;
-    margin: 12px;
-    padding: 11px;
+    max-width: 800px;
+    margin: 0px;
+    padding: 0px;
+    
 }
 .figura-destacada{
     position: relative;/*posiciona como elemento padre y este no se mueve.Es referencia de hijos absolutos*/
@@ -239,11 +241,69 @@ escala de valores de z index 10 para elementos posicionados dentro del contenido
     border: 1px solid black;
     border-radius: 8px;
 }
-.tarjetas{
+/*.tarjetas{
     display: flex;
     flex: 2;
     gap: 20px;
     flex-wrap: wrap;
     border: 1px solid black;
     border-radius: 8px;
+}*/
+.galeria-grid{
+    display: grid;/*activa grid al igual que flexbox , se declara en el contenedor*/
+    grid-template-columns: 2fr, 1fr, 1fr;
+   /* grid-template-columns: repeat(3 ,1fr); repite las columnas */
+    gap: 20px;
+    
+}
+.galeria-grid figure:first-of-type{
+    grid-column: 1 / 3; /*desde la linea 1 a la liena 3 : abarca las columnas 1 2. El segundo numero es la linea bond termina  , no la ultima colum que ocupa */
+
+}
+/*forma abreviada cpn span*/
+.galeria-grid figure:first-of-type{
+    grid-column: span 2; /*ocupa dos columnas desde donde le toque . mas legible y no depende de una posicion  */
+}
+.destacado {
+    grid-row: span 2;  /*con filas */
+    width: 100px;
+    height: 200px;
+    object-fit: cover;/*recorta por el centro en vez de reformar*/
+    border-radius: 6px;
+}
+#contenido {
+    display: grid;
+    grid-template-columns: 1fr, 3fr;
+    gap: 24px;
+    grid-template-areas: 'indice principal' 'indice lateral';
+    /*css dibuja la estructura , cada cadena de texto es una fila , cada palabra es una celda y repetir un nombre hace que una zona abarque varias celdas , aqui el indice ocupa 2 filas de la primera columna */
+   
+    
+    /*asignar cada elemento a su area  */
+
+
+#contenido > nav {grid-area: indice;}
+#contenido > article {grid-area: principal;}
+#contenido >aside {grid-area: lateral;}
+
+
+}
+.tarjeta2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid color black;
+    border-radius: 8px;
+}
+.fila-tarjeta2{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 80px;
+}
+.galeria-grid image{ /*que ls imagenes no se deformen*/
+    grid-row: span 2;  /*con filas */
+    width: 100px;
+    height: 200px;
+    object-fit: cover;/*recorta por el centro en vez de reformar*/
+    border-radius: 6px;
 }
