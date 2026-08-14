@@ -115,6 +115,7 @@ header nav{
 
 /*aplicar estilos a identificadores o i1d*/
 #inicio {
+    
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -182,7 +183,7 @@ sticky=fluye normal hasta llegar a un umbral(llamese alguna pate de la pagina), 
 
 /*patron para esta ocasion*/
 aside{
-    padding: 12px;
+    padding: 10px;
     border-radius: 6px;
     border: 1px solid #340f0f
 }
@@ -201,8 +202,8 @@ main ul,main ol{
 }
 .contenedor{
     max-width: 20px;
-    margin: 12px;
-    padding: 11px;
+    margin: 10px;
+    padding: 10px;
 }
 .figura-destacada{
     position: relative;/*posiciona como elemento padre y este no se mueve.Es referencia de hijos absolutos*/
