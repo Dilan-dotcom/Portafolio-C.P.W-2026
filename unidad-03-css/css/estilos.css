@@ -288,3 +288,22 @@ escala de valores de z index 10 para elementos posicionados dentro del contenido
 
 
 }
+.tarjeta2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid color black;
+    border-radius: 8px;
+}
+.fila-tarjeta2{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 80px;
+}
+.galeria-grid image{ /*que ls imagenes no se deformen*/
+    grid-row: span 2;  /*con filas */
+    width: 100px;
+    height: 200px;
+    object-fit: cover;/*recorta por el centro en vez de reformar*/
+    border-radius: 6px;
+}
