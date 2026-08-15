@@ -129,3 +129,13 @@ header nav ul li{
     
     
 }
+.alinear{
+  
+    text-align: center;
+    display: inline;
+    margin-left: 90px;
+}
+ul li {
+     display: inline-block;
+}
+
