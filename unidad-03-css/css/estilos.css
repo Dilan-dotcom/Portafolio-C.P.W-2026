@@ -180,10 +180,14 @@ nav a:hover {
     color: #f8cbad; /* al pasar el cursor*/
 }
 /* pseudo clasen _nth-child: filas cebra en la tabla*/
-tbody tr:nth-child(even){
+tbody tr :nth-child(even){
     background-color: #9ac498;
 }
 /*pseudo elemento ::first-letter y ::selection*/
+tbody tr:hover {/*la novedad es resaltar la fila de abajo del pulsor*/
+    background-color: #e3eef9;
+    
+}
 article p::first-letter {
     font-size: 32px;
     font-weight: bold;
@@ -226,6 +230,9 @@ th, td{
 thead th{
     background-color: #1F4E79;
     color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     /*Trabaja encabezados de la tabla*/
 }
 
@@ -239,6 +246,7 @@ tfoot td{
     padding: 12px;
     font-style: italic;
     background-color: #f5f7fa;
+    border-top: 2px solid #1f4e79;
 }
 
 fieldset{
@@ -275,7 +283,7 @@ main li {
 
 table{
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
     margin-bottom: 24px;
 }
 
@@ -283,6 +291,8 @@ caption{
     padding: 8px;
     font-weight: 700;
     margin-bottom: 24px;
+    text-align: left;
+    color:#29213e;
 }
 
 /*Los cinco valores de position
