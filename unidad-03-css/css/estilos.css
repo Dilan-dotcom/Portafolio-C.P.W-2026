@@ -478,6 +478,41 @@ form small{
     margin-top: block;
     margin-top: -10px;
     font-size: 0,8rem;
-    color: #c2650d;
+    color: #0f051f;
+    font-weight: 900;
     /*los <small> que acompañan a los camposcon los textos *minimo 8 caracteres , lo de  ** de 1 a 8 sesiones *etc*/
 }
+/*estilizar el boton con estados*/
+.boton, .boton-secundario {
+    background-color: rgb(114, 108, 145);
+    padding: 12px 24px ;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+} 
+/*los 3 estados del boton/estado 1 hover*//*mas oscuro el boton */
+.boton:hover{
+    background-color: rgb(58, 71, 29);
+}
+
+.boton:active{/*aun mas oscuro mientras se pulse*/
+/*estado / 2 active*/
+background-color: rgb(197, 119, 34);
+}
+
+.boton:focus {
+/*estado / 3 focus*/
+outline: 2px solid yellow;
+outline-offset: 5px;
+}
+/*variante secundaria*/
+.boton-secundario{
+    background-color: #aed267;
+}
+.boton-secundario:hover{
+    background-color: #4d5563;
+}
+
