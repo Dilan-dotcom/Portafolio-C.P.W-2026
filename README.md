@@ -132,7 +132,7 @@ Proyecto propio construido de forma autónoma.
 |  S15   | Display y posicionamiento  | posicionamiento y display            | [ver](/unidad-03-css/css/estilos.css) | [ver](/unidad-03-css/sitio-demo/recursos/seion%2015.png.png) |
 |  S16   | Flexbox                    |flex box ,alimeacion y propiedades de contenedores             | [ver](/unidad-03-css/css/estilos.css) | [ver](recursos/Captura%20sesion%2016.png) |
 |  S17   | CSS Grid                   |  grid , areas y columns           | [ver](/unidad-03-css/css/estilos.css) | [ver](recursos/Captura%20sesion%2017.png) |
-|  S18   | Componentes estilizados    |             | [ver](unidad-03/) | [ver](recursos/) |
+|  S18   | Componentes estilizados    | estlizamos tarjetas con hover ,focus ,sombras etcs | [ver](/recursos/Captura%20sesion%2018.png |
 |  S19   | Animaciones y filtros      |             | [ver](unidad-03/) | [ver](recursos/) |
 |  S20   | SCSS y repaso              |             | [ver](unidad-03/) | [ver](recursos/) |
 
