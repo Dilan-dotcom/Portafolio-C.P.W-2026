@@ -526,4 +526,10 @@ outline-offset: 5px;
     /*el primer cero 0(antes habia un  cero 0 en el primer 4) es dezplazamiento horizontal el 4 px es desplazamiento veertical , el 12px es el desenfoque cuanto mayor , mas difusa */
 
 }
+/*tarjeta interactiva*/
+.tarjetas:hover {
+    transform: translateY(-10px);
+    padding: 20px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0,5)
+}
 
