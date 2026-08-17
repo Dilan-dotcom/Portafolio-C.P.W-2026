@@ -237,9 +237,11 @@ thead th{
 }
 
 figure{
+    background-color: white;
     border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 tfoot td{
@@ -514,5 +516,14 @@ outline-offset: 5px;
 }
 .boton-secundario:hover{
     background-color: #4d5563;
+}
+/*tarjetas con sombra */
+.tarjetas{
+    background: rgb(78, 69, 69);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 12px 12px rgba(0, 0, 0, 0.1);
+    /*el primer cero 0(antes habia un  cero 0 en el primer 4) es dezplazamiento horizontal el 4 px es desplazamiento veertical , el 12px es el desenfoque cuanto mayor , mas difusa */
+
 }
 
