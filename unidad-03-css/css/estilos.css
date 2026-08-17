@@ -456,3 +456,28 @@ legend{
     font-weight: 700;
     color: #0f1161;
 }
+form input:focus, 
+form select:focus,
+form textarea:focus {
+     outline: none;
+     border-color: #172a42;
+     box-shadow: 0 0 0 3px rgba(31, 78, 121, 0.15);
+     /*el halo azul al borde del campo activo (al tocarlo)
+     EL FOCUS NO ES SOLO DECORACION ES UNA GUIA PARA EL USUARIO */
+     /*LOS ESTADOS DE VALIDACION */
+}   
+form input:invalid:not(:placeholder-shown){
+    border-color: red;
+}
+form input:valid:not(:placeholder-shown){
+    border-color: rgb(42, 113, 41);
+    /*apoya la validacion  de html en los required , type,pattern,min-max-length , etc .Colocando un halo de color segun el dato si es correcto o no*/
+}
+/*para los mensajes de ayuda */
+form small{
+    margin-top: block;
+    margin-top: -10px;
+    font-size: 0,8rem;
+    color: #c2650d;
+    /*los <small> que acompañan a los camposcon los textos *minimo 8 caracteres , lo de  ** de 1 a 8 sesiones *etc*/
+}
