@@ -180,10 +180,14 @@ nav a:hover {
     color: #f8cbad; /* al pasar el cursor*/
 }
 /* pseudo clasen _nth-child: filas cebra en la tabla*/
-tbody tr:nth-child(even){
+tbody tr :nth-child(even){
     background-color: #9ac498;
 }
 /*pseudo elemento ::first-letter y ::selection*/
+tbody tr:hover {/*la novedad es resaltar la fila de abajo del pulsor*/
+    background-color: #e3eef9;
+    
+}
 article p::first-letter {
     font-size: 32px;
     font-weight: bold;
@@ -226,23 +230,32 @@ th, td{
 thead th{
     background-color: #1F4E79;
     color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     /*Trabaja encabezados de la tabla*/
 }
 
 figure{
+    background-color: white;
     border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 tfoot td{
     padding: 12px;
     font-style: italic;
     background-color: #f5f7fa;
+    border-top: 2px solid #1f4e79;
 }
 
 fieldset{
     padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 section{
@@ -275,7 +288,7 @@ main li {
 
 table{
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
     margin-bottom: 24px;
 }
 
@@ -283,6 +296,8 @@ caption{
     padding: 8px;
     font-weight: 700;
     margin-bottom: 24px;
+    text-align: left;
+    color:#29213e;
 }
 
 /*Los cinco valores de position
@@ -368,23 +383,21 @@ escala de valores de z-index
     grid-row: span 2;/*abarca dos filas*/
 }
 
-#contenido {
+/*contenido {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns:repeat(3,1fr);
     gap: 20px;
 
-    grid-template-areas: 'indice principal' 'indice lateral';
-    /*css dibuja la estructura, cada cadena de texto es una fila.
+    /*grid-template-areas: 'indice principal' 'indice lateral';
+    css dibuja la estructura, cada cadena de texto es una fila.
     cad palabra dentro es una celda
     repetir el nombre hace que una zona abarque varias celdas
     aqui el indice acupa 2 filas de la primera columna*/
-    /*Asignar cada elemento a su area */
+    /*Asignar cada elemento a su area 
     #contenido > nav {grid-area: indice;}
     #contenido > nav {grid-area: principal;}
     #contenido > nav {grid-area: lateral;}
-    grid-template-areas: 'indice principal';
-
-}
+    grid-template-areas: 'indice principal'*/
 
 /*Que las imagenes no se desformen*/
 .galeria-grid img{
@@ -405,3 +418,117 @@ escala de valores de z-index
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
 }
+form label{ /* display block :pone la etiqueta sobre el campo/funciona mejor en pantallas angostas*/
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form select 
+form text area{
+    width: 100%;
+    padding: 10px;
+    border: 10px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-family: inherit; /*los campos del formulario NO heredan la fuente del body/ por omision sin esta linea el formulario apareceria con la fuente del sistema  */
+}
+  
+/*casillas por separado*/
+form input[type="radio"],
+form input[type="checkbox"] { 
+    width: auto;
+    margin-right: 6px;
+    margin-bottom: 0;
+
+}
+form input[type="radio"] + label ,
+form input[type="checkbox"] + label { 
+    display: inline;
+    font-weight: 400;/*el selector + alcanza la etiqeta y display : inline los coloca uno al lado del otro*/
+}
+legend{
+    padding: 0 8px 0 8 8px;
+    font-weight: 700;
+    color: #0f1161;
+}
+form input:focus, 
+form select:focus,
+form textarea:focus {
+     outline: none;
+     border-color: #172a42;
+     box-shadow: 0 0 0 3px rgba(31, 78, 121, 0.15);
+     /*el halo azul al borde del campo activo (al tocarlo)
+     EL FOCUS NO ES SOLO DECORACION ES UNA GUIA PARA EL USUARIO */
+     /*LOS ESTADOS DE VALIDACION */
+}   
+form input:invalid:not(:placeholder-shown){
+    border-color: red;
+}
+form input:valid:not(:placeholder-shown){
+    border-color: rgb(42, 113, 41);
+    /*apoya la validacion  de html en los required , type,pattern,min-max-length , etc .Colocando un halo de color segun el dato si es correcto o no*/
+}
+/*para los mensajes de ayuda */
+form small{
+    margin-top: block;
+    margin-top: -10px;
+    font-size: 0,8rem;
+    color: #0f051f;
+    font-weight: 900;
+    /*los <small> que acompañan a los camposcon los textos *minimo 8 caracteres , lo de  ** de 1 a 8 sesiones *etc*/
+}
+/*estilizar el boton con estados*/
+.boton, .boton-secundario {
+    background-color: rgb(114, 108, 145);
+    padding: 12px 24px ;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+} 
+/*los 3 estados del boton/estado 1 hover*//*mas oscuro el boton */
+.boton:hover{
+    background-color: rgb(58, 71, 29);
+}
+
+.boton:active{/*aun mas oscuro mientras se pulse*/
+/*estado / 2 active*/
+background-color: rgb(197, 119, 34);
+}
+
+.boton:focus {
+/*estado / 3 focus*/
+outline: 2px solid yellow;
+outline-offset: 5px;
+}
+/*variante secundaria*/
+.boton-secundario{
+    background-color: #aed267;
+}
+.boton-secundario:hover{
+    background-color: #4d5563;
+}
+/*tarjetas con sombra */
+.tarjetas{
+    background: rgb(78, 69, 69);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 12px 12px rgba(0, 0, 0, 0.1);
+    /*el primer cero 0(antes habia un  cero 0 en el primer 4) es dezplazamiento horizontal el 4 px es desplazamiento veertical , el 12px es el desenfoque cuanto mayor , mas difusa */
+
+}
+/*tarjeta interactiva*/
+.tarjetas figure:hover{
+    transform: translateY(-10px);
+    padding: 20px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0,5)}
+
