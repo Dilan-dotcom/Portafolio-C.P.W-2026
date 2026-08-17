@@ -251,6 +251,9 @@ tfoot td{
 
 fieldset{
     padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 section{
@@ -378,23 +381,21 @@ escala de valores de z-index
     grid-row: span 2;/*abarca dos filas*/
 }
 
-#contenido {
+/*contenido {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns:repeat(3,1fr);
     gap: 20px;
 
-    grid-template-areas: 'indice principal' 'indice lateral';
-    /*css dibuja la estructura, cada cadena de texto es una fila.
+    /*grid-template-areas: 'indice principal' 'indice lateral';
+    css dibuja la estructura, cada cadena de texto es una fila.
     cad palabra dentro es una celda
     repetir el nombre hace que una zona abarque varias celdas
     aqui el indice acupa 2 filas de la primera columna*/
-    /*Asignar cada elemento a su area */
+    /*Asignar cada elemento a su area 
     #contenido > nav {grid-area: indice;}
     #contenido > nav {grid-area: principal;}
     #contenido > nav {grid-area: lateral;}
-    grid-template-areas: 'indice principal';
-
-}
+    grid-template-areas: 'indice principal'*/
 
 /*Que las imagenes no se desformen*/
 .galeria-grid img{
@@ -414,4 +415,44 @@ escala de valores de z-index
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
+}
+form label{ /* display block :pone la etiqueta sobre el campo/funciona mejor en pantallas angostas*/
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form select 
+form text area{
+    width: 100%;
+    padding: 10px;
+    border: 10px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-family: inherit; /*los campos del formulario NO heredan la fuente del body/ por omision sin esta linea el formulario apareceria con la fuente del sistema  */
+}
+  
+/*casillas por separado*/
+form input[type="radio"],
+form input[type="checkbox"] { 
+    width: auto;
+    margin-right: 6px;
+    margin-bottom: 0;
+
+}
+form input[type="radio"] + label ,
+form input[type="checkbox"] + label { 
+    display: inline;
+    font-weight: 400;/*el selector + alcanza la etiqeta y display : inline los coloca uno al lado del otro*/
+}
+legend{
+    padding: 0 8px 0 8 8px;
+    font-weight: 700;
+    color: #0f1161;
 }
