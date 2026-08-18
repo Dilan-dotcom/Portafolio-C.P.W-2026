@@ -539,5 +539,12 @@ outline-offset: 5px;
 .tarjetas figure:hover{
     transform: translateY(-10px);
     padding: 20px;
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0,5)}
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0,5);
+    transform: scale(1.1, 0.9);/*el primer digito es x y el segundo es y escala */
+     transform: scale(1.1); /*escala .1=del tamaño original*/
+     transform: translateY(-5px);/*escala .1=del .ngeativo=traslada hacia arriba*/
+     transform: rotate(5deg);/*gira en grados*/
+     transform: skew(15deg);/*inclna grados elementos*/
+     transform: translate(-5ps) scale(1.03);
+}
 
