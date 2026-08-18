@@ -98,15 +98,7 @@ blockquote p{
 
 
 
-header nav a{
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    text-decoration: none;
-    /*display: inline-block;/*Pone en linea elementos*/
-    padding: 10px 15px;
 
-}
 header nav ul{
     margin-top: 10px;
     display: flex;
@@ -170,13 +162,27 @@ header nav li{
 
 /*estilos a solo enlaces dentro del nav*/
 
-nav a {
+header nav a {
     color: #fff;
     margin-right: 15px;
-    transition: color 0.3s;/*Cambio suave*/
+    transition:  0.9s;/*Cambio suave*/
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    /*display: inline-block;/*Pone en linea elementos*/
+    padding: 10px 15px;
+    transition: background-color 0.3s ease 0.1s;
+    /*
+    ease:arranca lento aceleta y frena omision : 
+    linear: velocidad constante
+    sease-in: arranca lento
+    ease-out sale lento
+    easeint-out lento en los 2 extremos
+    :*/
 }
 /*pseudo clase :hover*/
-nav a:hover {
+header nav a:hover {
     color: #f8cbad; /* al pasar el cursor*/
 }
 /* pseudo clasen _nth-child: filas cebra en la tabla*/
@@ -311,6 +317,11 @@ sticky: fluye normal hasta llegar a umbral, y entonces se pega*/
 .figura-destacada{
     position: relative;/*posiona como padre y este no se va a mover. es referencia de hijo absoluto*/
 }
+.figura-destacada :hover .etiqueta{
+transform: scale(1.1) rotate(-7deg);
+}
+
+
 
 .etiqueta{
     position: absolute;
@@ -454,7 +465,7 @@ form input[type="checkbox"] + label {
     font-weight: 400;/*el selector + alcanza la etiqeta y display : inline los coloca uno al lado del otro*/
 }
 legend{
-    padding: 0 8px 0 8 8px;
+    padding: 0 8px 0 8px 8px;
     font-weight: 700;
     color: #0f1161;
 }
@@ -517,6 +528,9 @@ outline-offset: 5px;
 .boton-secundario:hover{
     background-color: #4d5563;
 }
+.boton{
+    transition: background-color 0.8s ease;
+}
 /*tarjetas con sombra */
 .tarjetas{
     background: rgb(78, 69, 69);
@@ -530,5 +544,52 @@ outline-offset: 5px;
 .tarjetas figure:hover{
     transform: translateY(-10px);
     padding: 20px;
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0,5)}
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0,5);
+    transform: scale(1.1, 0.9);/*el primer digito es x y el segundo es y escala */
+    transform: scale(1.1); /*escala .1=del tamaño original*/
+    transform: translateY(-5px);/*escala .1=del .ngeativo=traslada hacia arriba*/
+    transform: rotate(5deg);/*gira en grados*/
+    transform: skew(15deg);/*inclna grados elementos*/
+    transform: translate(-5px) scale(1.03);
+}
+/*definir la transicion*/
+@keyframes aparecer {
+    form {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*aplica*/
+.tarjeta{
+    animation: aparecer 0.6s ease-out;
+}
+@keyframes pulso{
+    0%, 100% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.08);
+    }
+}
+.etiqueta {
+    animation: pulso 2s ease-in-out infinite ;/*da unefecto en las imagenes aunque se puede poner en botones*/
+   /* animation-iteration-count: 5; da un total de veces que hara esa animacion*/
+    animation-direction: reverse;
 
+}
+   /*aplicacion de filtross*/
+.galeria-grid img:hover {
+    filter: grayscale(100%);
+    filter: blur(2px);
+    filter: brightness(1.5);
+    filter: contrast(1.5);
+    filter: saturate(2);
+    filter: sepia(60%);
+    filter: opacity(20%);
+    filter: grayscale(100%) brightness(1.1);
+    filter: invert(500%);
+}
