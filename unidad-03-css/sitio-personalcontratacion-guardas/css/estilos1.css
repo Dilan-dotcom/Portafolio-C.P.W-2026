@@ -1,12 +1,13 @@
-*{
-margin: 0px;
-padding: 0 auto;
-box-sizing: border-box;
+.inicial{
+    max-width: 1200px;
+    padding: 25px;
+    margin: 0 auto ;
+
 }
 
 body{ font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(249, 249, 248);
-    background-color: rgb(18, 8, 60);
+    background-color: rgb(68, 63, 88);
 }
 h1{
     color: rgb(252, 252, 252);
@@ -27,7 +28,7 @@ h2{
 
 
 p{
-    color: rgb(241, 245, 241);
+    color: rgb(0, 0, 0);
     font-size: medium;
     word-spacing: 2px;
     padding: 10px;
@@ -49,26 +50,27 @@ nav a{
 }
 
 nav a {
-    color:rgb(109, 116, 116);
-    
+    color:rgb(1, 21, 21);
+    text-transform: capitalize;
     transition: color 0.3s;
     margin-left: 90px;
-    
+    font-size: xx-large;
+   
     
 
 }
 
 nav a:hover{
-color: rgb(235, 232, 237);
+color: rgb(72, 71, 73);
 }
 .destacar{
     color: rgb(30, 29, 29);
     
 }
-p::first-letter{
+p:first-letter{
     font-size: larger;
     font-weight: bolder;
-    color: rgb(102, 102, 112);
+    color: rgb(3, 3, 254);
 }
 body{
     font-family: "Protest Guerrilla";
@@ -78,6 +80,7 @@ header{
     background-size: cover;
     background-position: right;
     padding: 1px;
+    position: relative;
    
 
 
@@ -109,10 +112,6 @@ nav ul li{
     text-decoration: underline;
      color: rgb(186, 203, 188);
 }
-*{
-    max-width: 1200;
-    margin: 0 auto;
-}
 main a{
      border-bottom: 1px solid #a9aeb3;
 }
@@ -139,3 +138,35 @@ ul li {
      display: inline-block;
 }
 
+
+img{
+    margin-left: 200px;
+    border: 2px solid white;
+    
+}
+
+.logito{
+    margin-left: 800px;
+    margin-bottom: 5px ;
+}
+img:hover{ 
+    
+    
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0,5);
+    transform: rotate(5deg);
+    filter: invert(500%);
+}
+video{
+    margin-left: 300px;
+}
+.textico{
+    text-align: center;
+    font-weight: 70;
+
+}
+    
+.textico:hover{
+   
+    transform: scale(1,2);
+     filter: contrast(1.5);
+}
