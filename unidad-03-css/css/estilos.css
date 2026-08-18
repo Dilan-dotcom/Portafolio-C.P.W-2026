@@ -165,7 +165,7 @@ header nav li{
 header nav a {
     color: #fff;
     margin-right: 15px;
-    transition: color 0.9;/*Cambio suave*/
+    transition:  0.9s;/*Cambio suave*/
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
