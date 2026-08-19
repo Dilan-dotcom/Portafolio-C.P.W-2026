@@ -34,8 +34,196 @@
             </ul>
         </nav>
     </header>
-    
-    <main></main>
+
+    <main id="contenido">
+        <!--trabajaramos en el encabezado de la galeria -->
+        <section id="intro" class="encabezado">
+            <h1 class="pagina titulo">Galeria</h1>
+            <p class="pagina-bajada ">Una seleccion que hemos fotografiado entre 2024 y 20226</p>
+        </section>
+        <!--cifras datos que se maquetan con css y grid-->
+        <section id="cifras" class="seccion">
+            <div class="rejillas-cifras">
+                <div class="cifra">
+                    <p class="cifra-numero">480</p>
+                    <p class="cifra-texto">Sesiones realizadas</p>
+                </div>
+
+                <div class="cifra">
+                    <p class="cifra-numero">12</p>
+                    <p class="cifra-texto">Años de trayectoria </p>
+                </div>
+
+                <div class="cifra">
+                    <p class="cifra-numero">36</p>
+                    <p class="cifra-texto">Marcas Acompañadas</p>
+                </div>
+
+                <div class="cifra">
+                    <p class="cifra-numero">98%</p>
+                    <p class="cifra-texto">Volveria a contratarnos </p>
+                </div>
+            </div>
+        </section>
+        
+
+            <!--categorias etiquetas que se maquetan con flexbox
+            con enlaces a las anclas de cada seccion -->
+
+            <section id="categorias" class="seccion">
+                <h2 class="seccion-titulo">Explorar por categoria</h2>
+                <p class="seccion-entrada">Cada enlace lleva a su seccion dentro de esta misma pagina </p>
+
+                <ul class="fila-etiqueta">
+                    <li><a href="#mosaico" class="etiqueta">Todo el trabajo</a></li>
+                    <li><a href="#retrato" class="etiqueta">Retrato</a></li>
+                    <li><a href="#producto" class="etiqueta">Productos</a></li>
+                    <li><a href="#eventos" class="etiqueta">Eventos</a></li>
+                </ul>
+            </section>
+            <!--mosaico principla css  grid con piezas de tamañom distinto-->
+            <section id="mosaico" class="seccion seccion-alterna">
+                <h2 class="seccion-titulo">Todo el trabajo</h2>
+                <div class="mosaico">
+
+                    <!--recursos/g-01.jpg - 1200 x 800 dos columnas -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-01.jpg" alt="retrato de una mujer en una ventana con luz natural"
+                        width="1200" height="800" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Luz de ventana</span>
+                            <span class="pieza-categoria">Retrato</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+               <!--recursos/g-02.jpg - 600 x 900 dos columnas ocupa 2 filas-->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-02.jpg" alt="fotografia vertical de una botella de ceramica sobre madera"
+                        width="600" height="900" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Ceramica de Guaitil</span>
+                            <span class="pieza-categoria">Producto</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+               <!--recursos/g-03.jpg - 600 x 600 dos columnas -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-03.jpg" alt="detalle de manos entrelazadas duante una Ceremonia"
+                        width="600" height="600" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Ceremonia</span>
+                            <span class="pieza-categoria">Eventos</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+               <!--recursos/g-04.jpg - 600 x 600  -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-04.jpg" alt="retrato en blanco y negro de un hombre mayor sonriendo"
+                        width="600" height="600" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Don Rafael y</span>
+                            <span class="pieza-categoria">Retrato</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+               <!--recursos/g-05.jpg - 1200 x 1200 ocupa 2 x 2 -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-05.jpg" alt="vista general de un salon durante una celebracion al atardecer"
+                        width="1200" height="1200" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Atardecer en Santa Ana</span>
+                            <span class="pieza-categoria">Eventos</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+               <!--recursos/g-06.jpg - 600 x 600 -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-06.jpg" alt="Taza de cafe sobre fondo neutro y sombra marcada"
+                        width="600" height="600" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Serie cafe</span>
+                            <span class="pieza-categoria">Producto</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+               <!--recursos/g-07.jpg - 1200 x 800 dos columnas -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-07.jpg" alt="grupo de personas conversando durante un evento corporativo"
+                        width="1200" height="800" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">encuentro anual</span>
+                            <span class="pieza-categoria">Eventos</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+               <!--recursos/g-08.jpg - 600 x 900 ocupa dos filas-->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-08.jpg" alt="retrato de cuerpo entero de una bailarina en el estudio"
+                        width="600" height="900" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Estudio de movimiento</span>
+                            <span class="pieza-categoria">Retrato</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+               <!--recursos/g-09.jpg - 600 x 600 -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-09.jpg" alt="conjunto de joyas artesanales sobre tela oscura "
+                        width="600" height="600" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Joyeria artesanal</span>
+                            <span class="pieza-categoria">Producto</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+               <!--recursos/g-10.jpg - 600 x 600  -->
+                    <figure class="pieza pieza-ancha">
+                        <img src="recursos/g-10.jpg" alt="niña riendo durante una sesion familiar en exteriores "
+                        width="600" height="600" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Sesion familiar</span>
+                            <span class="pieza-categoria">Retrato</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!--secciones de categoria / reutilizaremos las rejilas de pagina inicio -->
+            <section id="retrato" class="seccion">
+                <h2 class="seccion-titulo">Retrato</h2>
+                <p class="seccion-entrada">sesiones individuales ,familiares y de perfil profesional</p>
+
+                <div class="rejilla-categoria">
+
+                    <figure class="pieza">
+                        <img src="recursos/g-01.jpg" alt="retrato de una mujer en una ventana "
+                        width="1200" height="800" loading="lazy">
+                        <figcaption class="pieza-info">
+                            <span class="pieza-titulo">Luz de ventana</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        
+    </main>
     
         <!--pie de pagina se repite (footer) en las 4 paginas -->
     <footer id="pie" class="pie">
