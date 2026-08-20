@@ -16,4 +16,31 @@
     --color-fondo-alt: #f0eee9; /*para alternar fondos secciones */
     --color-linea: #dddad3; /*borddes y separadores*/
     --color-blanco: #ffffff; /*blanco puro*/
+
+    
+/*tipogfrafia*/
+--fuente-titulo: georgia, 'tiems new roman', serif;
+--fuente-texto: 'segoeui' ,Arial, san-serif;
+
+/*espaciado conversion 1rem=10px*/
+--esp-xs: 0.8remm/*8px*/
+--esp-sm: 1.6remm/*16px*/
+--esp-md: 2.4remm/*24px*/
+--esp-lg: 4.0remm/*40px*/
+--esp-xl: 8remm/*80px*/
+
+/*otros elementos*/
+
+--radio: 0.6rem /*6px*/
+--sombra-1: 0 0.2rem 0.6rem rgba (0,0,0,.06);/*APEMAS UNA SOMBRA*/
+--sombra-2: 0 0.4rem 1.2rem rgba (0,0,0,.10);/*TARJETAS*/
+--sombra-3: 0 0.8rem 2.0rem rgba (0,0,0,.16);/*ELEMENTOS elevados*/
+--transicion: 0.25s easy
+--ancho-max: 120rem; /*1200px*/
+
 }
+
+
+
+
+
