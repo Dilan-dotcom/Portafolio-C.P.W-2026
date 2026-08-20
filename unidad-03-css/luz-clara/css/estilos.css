@@ -40,6 +40,19 @@
 
 }
 
+/*reset y base tipografia*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*la linea mas importante del reset : porque sin ella si una caja (todos son cajas textos imagenes etc)le damos un width de 300px y ademas un padding de 20 px y ademas un border de 2 pixeles la cajan en realidad mide 300+20+20+2+2=344px cuando se aplica esta linea en estos tanto los padding como los bordes van incluidos en el tamaño final y se descuentan hacia el centro*/
+}
+/*la base del tamaño la tecnica del 62.5%*/
+html{
+    font-size: 62.5%; /*por omision el navegador usa 16px para el tamaño base el 62.5% es exactamente 10 Tiene que  ver con accesiblidad y la parte responsive */
+    scroll-behavior: smooth; /*hace saltos suavesal usar navegacion por anclas */
+}
+
+
 
 
 
