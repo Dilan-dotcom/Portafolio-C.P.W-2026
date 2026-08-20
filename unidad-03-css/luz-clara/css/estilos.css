@@ -19,15 +19,15 @@
 
     
 /*tipogfrafia*/
---fuente-titulo: georgia, 'tiems new roman', serif;
---fuente-texto: 'segoeui' ,Arial, san-serif;
+--fuente-titulo: georgia, 'times new roman', serif;
+--fuente-texto: 'segoe ui' ,Arial, sans-serif;
 
 /*espaciado conversion 1rem=10px*/
---esp-xs: 0.8remm/*8px*/
---esp-sm: 1.6remm/*16px*/
---esp-md: 2.4remm/*24px*/
---esp-lg: 4.0remm/*40px*/
---esp-xl: 8remm/*80px*/
+--esp-xs: 0.8rem;/*8px*/
+--esp-sm: 1.6rem;/*16px*/
+--esp-md: 2.4rem;/*24px*/
+--esp-lg: 4.0rem;/*40px*/
+--esp-xl: 8rem;/*80px*/
 
 /*otros elementos*/
 
@@ -35,7 +35,7 @@
 --sombra-1: 0 0.2rem 0.6rem rgba (0,0,0,.06);/*APEMAS UNA SOMBRA*/
 --sombra-2: 0 0.4rem 1.2rem rgba (0,0,0,.10);/*TARJETAS*/
 --sombra-3: 0 0.8rem 2.0rem rgba (0,0,0,.16);/*ELEMENTOS elevados*/
---transicion: 0.25s easy
+--transicion: 0.25s easy;
 --ancho-max: 120rem; /*1200px*/
 
 }
@@ -58,9 +58,47 @@ body{
     color: var(--color-tinta);
     background-color: var(--color-fondo);
 }
+/*gerarquia de titulos */
+h1, h2, h3 {
+    font-family: var(--fuente-titulo);
+    line-height: 1.2;
+    color: var(--color-marca);
+}
 
+h1{
+    font-size: 4.8rem;
+}
 
+h2{
+    font-size: 3.2rem;
+}
 
+h3{
+    font-size: 2.0rem;
+}
 
+p{
+    margin-bottom: var(--esp-sm);
+}
+a{
+    color: var(--color-acento);
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/*contenedores y secciones */
+.seccion{
+    max-width: var(--ancho-max);/*toma todo el ancho displonible*/
+    margin-left: auto;
+    margin-right: auto; /*el margin left y rigth en auto centran los bloques repartiendo el espacio por igual */
+    padding: var(--esp-xl) var(--esp-md);/*dos valores :el primer oafecta arriba y el de abajo los otros 2 izquierda  a derecha (orden reloj)*/
+}
 
+.seccion-alterna{
+    background-color: var(--color-fondo-alt);
+    max-width: none; /*se anula el ancho maximo para que el fondo ocupe todo el ancho de pantalla */
+}
 
