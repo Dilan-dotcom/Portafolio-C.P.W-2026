@@ -1,0 +1,19 @@
+/*estudio luz clara*/
+
+/*variables y configuracion*/
+/*una variable guarda un valor con un nombre para poder reutilizarla */
+
+/*se declara dentro de :root que represeenta el elemento html y es el ancestro de todos .Todos los elementos del documento lo pueden usar */
+
+:root {
+    /*paleta de colores*/
+    --color-tinta: #1a1a1a; /*texto principal , casi negro*/
+    --color-suave: #6b6b6b; /*texto secundario pies de fotos*/
+    --color-marca: #2c3e50; /*Azul del estudio*/
+    --color-acento: #c87941; /*terracota de los botones*/
+    --color-acento-osc: #a45f2e; /*terracota oscuro*/
+    --color-fondo: #fafaf8; /*tblanco roto no blanco oscuro*/
+    --color-fondo-alt: #f0eee9; /*para alternar fondos secciones */
+    --color-linea: #dddad3; /*borddes y separadores*/
+    --color-blanco: #ffffff; /*blanco puro*/
+}
