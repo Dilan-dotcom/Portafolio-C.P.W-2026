@@ -225,3 +225,42 @@ max-width: 70rem;
     font-weight: 1.8rem;
     margin-bottom: var(--esp-md);
 }
+/*fila servicios */
+ .fila-servicios {
+    display: flex;
+    gap: var(--esp-md);
+    flex-wrap: wrap;
+ }
+ .tarjeta {
+    flex: 1 1 30rem; /*flex box grow .el primer 1 es una regla si sobra expacio crece , el segundo 1 flex-shrim:si sobra espacio se encoge y el 30rem es flex basis:parte de un tamaño base 300px*/
+    background-color: var(--color-blanco);
+    padding: var(--esp-md);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: tranform var(--transicion), box-shadow var(--transicion);
+ }
+
+ .tarjeta-icono{
+    color: var(--color-acento);
+     margin: 0 auto;
+ }
+
+ .tarjeta-titulo {
+    margin-bottom: var(--esp-xs);
+ }
+ .tarjeta-texto {
+    color: var(--color-suave);
+    flex-grow: 1; /*hace que absorba todo el espacio verticalsobrante de la tarjeta*/
+ }
+
+ .tarjeta-precio {
+    font-weight: 700;
+    color: var(--color-marca);
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    padding-top: var(--esp-sm);
+    border-top: 0.1rem solid color var(--color-linea);
+}
