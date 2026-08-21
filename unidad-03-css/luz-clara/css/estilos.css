@@ -191,3 +191,37 @@ transition: background-color var(--transicion) color var(--transicion);
 .menu-enlace.activo {  /*das clases misno elemento significa que el elemento que tenga las 2 clases e dla marca de la pagina actual o activa*/
     color: var(--color-acento);
 }
+
+/*portada*/
+/*aqui va la imagen de fondo*/
+
+.portada {
+    background-image: url('../recursos/portada.webp');
+    background-color: var(--color-marca);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 55rem;
+    display: flex;
+    align-items: center;
+    padding: var(--esp-md);
+    text-align: center;
+}
+
+.portada-caja {
+background-color: rgba(0, 0, 0, 0.45);
+padding: var(--esp-lg);
+border-radius: var(--radio);
+max-width: 70rem;
+}
+
+.portada-titulo {
+    color: var(--color-blanco);
+    margin-bottom: var(--esp-sm);
+}
+
+.portada-bajada {
+    color: var(--color-fondo);
+    font-weight: 1.8rem;
+    margin-bottom: var(--esp-md);
+}
