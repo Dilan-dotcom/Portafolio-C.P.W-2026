@@ -94,11 +94,43 @@ img{
     max-width: var(--ancho-max);/*toma todo el ancho displonible*/
     margin-left: auto;
     margin-right: auto; /*el margin left y rigth en auto centran los bloques repartiendo el espacio por igual */
-    padding: var(--esp-xl) var(--esp-md);/*dos valores :el primer oafecta arriba y el de abajo los otros 2 izquierda  a derecha (orden reloj)*/
 }
-
 .seccion-alterna{
     background-color: var(--color-fondo-alt);
     max-width: none; /*se anula el ancho maximo para que el fondo ocupe todo el ancho de pantalla */
 }
+.seccion-alterna >* {
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto;/*el contenido de esta seccion se limita y se centra > la boquita abierta significa hijo directo eso significa que alcanza solo  el primer nivel del hijo directo*/
+}
 
+.seccion-titulo {
+    margin-bottom: var(--esp-sm);
+    text-align: center;
+    max-width: 65ch; /*la unidad de medida ch equivale al ancho del caracter 0 de la fuente en uso son 65 caracteres por linea para una lectura comoda*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--esp-lg);
+    text-align: center;
+    color: var(--color-suave);
+}
+.pagina-encabezado {
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+    padding: var(--esp-xl) var(--esp-md) var(--esp-lg); /*tres valores que afectan arriba , olos lados y abajo*/
+    text-align: center;
+}
+
+.pagina-titulo {
+    margin-bottom: var(--esp-xs);
+}
+
+.pagina-bajada {
+    color: var(--color-suave);
+    font-size: 1.8rem;
+}
+.subtitulo{
+    margin-top: var(--esp-md);
+    margin-bottom: var(--esp-xs);
+}
