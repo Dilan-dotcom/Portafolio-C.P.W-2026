@@ -32,9 +32,9 @@
 /*otros elementos*/
 
 --radio: 0.6rem /*6px*/
---sombra-1: 0 0.2rem 0.6rem rgba (0,0,0,.06);/*APEMAS UNA SOMBRA*/
---sombra-2: 0 0.4rem 1.2rem rgba (0,0,0,.10);/*TARJETAS*/
---sombra-3: 0 0.8rem 2.0rem rgba (0,0,0,.16);/*ELEMENTOS elevados*/
+--sombra-1: 0 0.2rem 0.6rem rgba (0,0,0,0.6);/*APEMAS UNA SOMBRA*/
+--sombra-2: 0 0.4rem 1.2rem rgba (0,0,0,1.0);/*TARJETAS*/
+--sombra-3: 0 0.8rem 2.0rem rgba (0,0,0,1.6);/*ELEMENTOS elevados*/
 --transicion: 0.25s easy;
 --ancho-max: 120rem; /*1200px*/
 
@@ -94,11 +94,301 @@ img{
     max-width: var(--ancho-max);/*toma todo el ancho displonible*/
     margin-left: auto;
     margin-right: auto; /*el margin left y rigth en auto centran los bloques repartiendo el espacio por igual */
-    padding: var(--esp-xl) var(--esp-md);/*dos valores :el primer oafecta arriba y el de abajo los otros 2 izquierda  a derecha (orden reloj)*/
 }
-
 .seccion-alterna{
     background-color: var(--color-fondo-alt);
     max-width: none; /*se anula el ancho maximo para que el fondo ocupe todo el ancho de pantalla */
 }
+.seccion-alterna >* {
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto;/*el contenido de esta seccion se limita y se centra > la boquita abierta significa hijo directo eso significa que alcanza solo  el primer nivel del hijo directo*/
+}
 
+.seccion-titulo {
+    margin-bottom: var(--esp-sm);
+    text-align: center;
+    max-width: 65ch; /*la unidad de medida ch equivale al ancho del caracter 0 de la fuente en uso son 65 caracteres por linea para una lectura comoda*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--esp-lg);
+    text-align: center;
+    color: var(--color-suave);
+}
+.pagina-encabezado {
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+    padding: var(--esp-xl) var(--esp-md) var(--esp-lg); /*tres valores que afectan arriba , olos lados y abajo*/
+    text-align: center;
+}
+
+.pagina-titulo {
+    margin-bottom: var(--esp-xs);
+}
+
+.pagina-bajada {
+    color: var(--color-suave);
+    font-size: 1.8rem;
+}
+.subtitulo{
+    margin-top: var(--esp-md);
+    margin-bottom: var(--esp-xs);
+}
+/*cabecera y menu*/
+.cabecera{
+    display: flex; /*activa el flexbox*/
+    justify-content: space-between;/*colocar el primer al inicio y el segundo al final*/
+    align-items: center;
+    padding: var(--esp-sm) var(--esp-md);
+    border-bottom: 0.1rem solid var(--color-linea);
+    top: 0;
+    position: sticky;
+    z-index: 100;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: var(--esp-xs);
+    color: var(--color-marca);
+}
+.logo:hover .logo-icono{
+    transform:rotate(-8deg)/*cuando el cursor este sobre el logo se vuelve -8 grados */
+}
+
+.logo-texto {
+    font-family: var(--fuente-titulo);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    gap: var(--esp-sm);
+    list-style: none;
+}
+
+.menu-enlace {
+display: inline-block; /*esta linea permite aplicar relleno*/
+padding: var(--esp-xs) var(--esp-sm);
+color: var(--color-tinta);
+font-weight: 600;
+border-radius: var(--radio);
+transition: background-color var(--transicion) color var(--transicion);
+
+}
+.menu-enlace:hover {
+    background-color: var(--color-fondo-alt);
+    color: var(--color-marca);
+}
+
+.menu-enlace:focus {
+    outline: 0.2rem solid var(--color-acento);
+    outline-offset: 0.2rem; /* se activa coon la tecla tab al llegar el enlace  permite navegar en el sitio con el teclado*/
+}
+
+.menu-enlace.activo {  /*das clases misno elemento significa que el elemento que tenga las 2 clases e dla marca de la pagina actual o activa*/
+    color: var(--color-acento);
+}
+
+/*portada*/
+/*aqui va la imagen de fondo*/
+
+.portada {
+    background-image: url('../recursos/portada.webp');
+    background-color: var(--color-marca);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 55rem;
+    display: flex;
+    align-items: center;
+    padding: var(--esp-md);
+    text-align: center;
+}
+
+.portada-caja {
+background-color: rgba(0, 0, 0, 0.45);
+padding: var(--esp-lg);
+border-radius: var(--radio);
+max-width: 70rem;
+}
+
+.portada-titulo {
+    color: var(--color-blanco);
+    margin-bottom: var(--esp-sm);
+}
+
+.portada-bajada {
+    color: var(--color-fondo);
+    font-weight: 1.8rem;
+    margin-bottom: var(--esp-md);
+}
+/*fila servicios */
+ .fila-servicios {
+    display: flex;
+    gap: var(--esp-md);
+    flex-wrap: wrap;
+ }
+ .tarjeta {
+    flex: 1 1 30rem; /*flex box grow .el primer 1 es una regla si sobra expacio crece , el segundo 1 flex-shrim:si sobra espacio se encoge y el 30rem es flex basis:parte de un tamaño base 300px*/
+    background-color: var(--color-blanco);
+    padding: var(--esp-md);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: tranform var(--transicion), box-shadow var(--transicion);
+ }
+
+ .tarjeta-icono{
+    color: var(--color-acento);
+     margin: 0 auto;
+ }
+
+ .tarjeta-titulo {
+    margin-bottom: var(--esp-xs);
+ }
+ .tarjeta-texto {
+    color: var(--color-suave);
+    flex-grow: 1; /*hace que absorba todo el espacio verticalsobrante de la tarjeta*/
+ }
+
+ .tarjeta-precio {
+    font-weight: 700;
+    color: var(--color-marca);
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    padding-top: var(--esp-sm);
+    border-top: 0.1rem solid color var(--color-linea);
+}
+
+/*galeria.css grid*/
+/*grid dos dimensiones cuadricula de filas y columna*/
+
+.rejilla-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    /*se lee de adentro hacia afuera:(28 rem 1fr cada columna mida 280px y como maximo una fraccion del espacio disponible))repeat (auto-fit) crea tantas como quepan con esa medida Juntas pone todas las columnas las que quepan en 280px y reparte el espacio sobrante entre ellas.Responsive si media queris*/
+    gap: var(--esp-sm);
+}
+
+.galeria-pieza {
+    position: relative; /*no mueve laa figura, solo le declara un punto de referencia para los hijos*/
+    overflow: hidden; /*recorta lo que sobre sale de los limites de la figura .Peermite que la img se agrande al pasar el cursor sin invsadir a las figuras vecinas */
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+}
+
+.pieza-destacada {
+grid-column: span 2;/*2 columnas*/
+grid-row: span 2;/*2 filas */
+}
+
+.galeria-pieza img{
+width: 100%;
+height: 100%;
+object-fit: cover;/*recorta la imagen por el centro para no deformarla */
+transition: transform 0.4s ease,filter 0.4s ease;
+filter: grayscale(60%); /*el filtro quita el 60% de color*/
+}
+
+.galeria-pieza:hover img{
+    transform: scale(1.6);
+    filter: grayscale(0);  /*recupera el color */
+}
+
+.galeria-pie{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0; /*absolute se ubica con respecto al ancestro mas cercano*/
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: var(--esp-xs);
+    font-size: 1.3rem;
+    text-align: center;
+    transform: translate(100%); /*lo desplaza hacia abajo el 100%de su altura */
+    transition: transform var(--transicion);
+
+}
+.galeria-pie:hover .galeria-pie{
+
+    transform: rotateY(0); /*el pie de fotovuelve a suposicion deslizandose hacia abajo*/
+}
+
+/*equipo*/
+
+.rejilla-galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1 fr));
+    gap: var(--esp-md);
+
+}
+.ficha {
+    background-color: var(--esp-md);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+    padding: var(--esp-md);
+    text-align: center;
+    transition: transform var(--transicion), box-shadow var(--transicion) ;
+}
+
+.ficha-foto {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 0.3rem solid color var()
+}
+
+.ficha-nombre {
+    margin-bottom: 0.2rem;
+}
+
+.ficha-rol {
+    color: var(--color-acento);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: var(--esp-xs);
+}
+
+.ficha-texto {
+    color: var(--color-acento-osc);
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+/*dos columnas */
+.dos-columnas {
+    display: flex;
+    gap: var(--esp-lg);
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.columna-texto {
+    flex: 1 1 32rem;
+}
+
+.columna-imagen{
+    flex: 1 1 32rem;
+    margin: 0;
+}
+
+.columna-imagen img {
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+    width: 100%;
+}
+
+.imagen-pie {
+    margin-top: var(--esp-xs);
+    font-size: 1.3rem;
+    color: var(--color-suave);
+    text-align: center;
+    font-style: italic;
+}
