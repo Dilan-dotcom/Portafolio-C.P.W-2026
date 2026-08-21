@@ -318,5 +318,47 @@ filter: grayscale(60%); /*el filtro quita el 60% de color*/
     transform: rotateY(0); /*el pie de fotovuelve a suposicion deslizandose hacia abajo*/
 }
 
+/*equipo*/
 
+.rejilla-galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1 fr));
+    gap: var(--esp-md);
+
+}
+.ficha {
+    background-color: var(--esp-md);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+    padding: var(--esp-md);
+    text-align: center;
+    transition: transform var(--transicion), box-shadow var(--transicion) ;
+}
+
+.ficha-foto {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 0.3rem solid color var()
+}
+
+.ficha-nombre {
+    margin-bottom: 0.2rem;
+}
+
+.ficha-rol {
+    color: var(--color-acento);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: var(--esp-xs);
+}
+
+.ficha-texto {
+    color: var(--color-acento-osc);
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
 
