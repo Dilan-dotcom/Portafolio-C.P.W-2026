@@ -260,3 +260,16 @@ opacity: 0.94;
   opacity: 0.22;
   line-height: 1;
 }
+.cita p {
+  font-family: var(--fuente-titulo);
+  position: relative;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.cita-autoria {
+  color: var(--suave);
+  font-size: 1.4rem;
+  text-align: right;
+  font-style: normal;
+}
