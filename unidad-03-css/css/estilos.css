@@ -593,3 +593,7 @@ outline-offset: 5px;
     filter: grayscale(100%) brightness(1.1);
     filter: invert(500%);
 }
+.tex{
+    background-color: #4d5563;
+}
+
