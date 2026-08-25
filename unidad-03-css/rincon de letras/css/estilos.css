@@ -227,6 +227,22 @@ opacity: 0.94;
   font-size: 1.5rem;
 }
 .tarjeta:hover {
-  transform: translateY(01.5rem);
+  transform: translateY(-1.5rem);
   box-shadow: var(--sombra-3);
+}
+
+#historia p {
+ max-width: 70ch;  
+}
+
+.cita {
+  max-width: 68rem;
+  margin: var(--esp-md), 0;
+  padding: var(--esp-md), var(--esp-lg);
+  background-color: var(--blanco);
+  border-left: 0.5rem solid var(--acento);
+  border-radius: 0 var(--radio)var(--radio) 0;
+  box-shadow: var(--sombra-1);
+  position: relative;
+
 }
