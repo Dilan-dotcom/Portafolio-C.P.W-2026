@@ -305,9 +305,14 @@ opacity: 0.94;
   cursor: pointer;
   transition: background-color var(--transicion), transform var(--transicion);
 }
+boton-principal{
+  background-color: var(--acento);
+  color: var(--blanco);
+}
+
 /*primer estado*/
 .boton-principal:hover {
-  border-color: var(--acento);
+  background-color: var(--acento-osc);
   transform: translateY(-0.2rem);
 }
 /*estado 2*/
