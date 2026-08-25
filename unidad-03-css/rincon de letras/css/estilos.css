@@ -246,3 +246,17 @@ opacity: 0.94;
   position: relative;
 
 }
+
+/*pseudo elemento*/
+
+.cita::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.5rem;
+  left: 1.2rem;
+  font-family: var(--fuente-titulo);
+  font-size: 7rem;
+  color: var(--acento);
+  opacity: 0.22;
+  line-height: 1;
+}
