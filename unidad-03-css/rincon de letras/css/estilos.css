@@ -273,3 +273,23 @@ opacity: 0.94;
   text-align: right;
   font-style: normal;
 }
+
+/*contenido secundario*/
+#aviso {
+.panel-aviso{
+  background: var(--papel-atl);
+  border-left: 0.4rem solid var(--acento);
+  border-radius: 0 var(--radio) var(--radio)0;
+  padding: var(--esp-md);
+  margin: var(--esp-lg) auto;
+  max-width: var(--ancho-max);
+  box-shadow: var(--sombra-1);
+
+
+}
+}
+
+#aviso h2 {
+  margin-bottom: 0;
+  
+}
