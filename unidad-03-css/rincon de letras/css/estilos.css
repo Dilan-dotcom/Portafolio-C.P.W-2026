@@ -225,5 +225,8 @@ opacity: 0.94;
   font-weight: 700;
   color: var(--marca);
   font-size: 1.5rem;
-  
+}
+.tarjeta:hover {
+  transform: translateY(01.5rem);
+  box-shadow: var(--sombra-3);
 }
