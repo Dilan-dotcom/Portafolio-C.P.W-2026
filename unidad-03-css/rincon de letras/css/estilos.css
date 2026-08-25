@@ -293,3 +293,12 @@ opacity: 0.94;
   margin-bottom: 0;
   
 }
+
+/*footer*/
+
+#pie {
+  background-color: var(--marca);
+  color: var(--blanco);
+  padding: var(--esp-xl) var(--esp-md) var(--esp-md);
+  margin-top: var(--esp-xl);
+}
