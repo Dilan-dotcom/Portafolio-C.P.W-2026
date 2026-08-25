@@ -1,0 +1,204 @@
+:root {
+  --tinta: #1f1b14;
+  --suave: #6b6259;
+  --marca: #5b3a29;
+  --acento: #a6572f;
+  --acento-osc :#7f4224;
+  --papel: #f8f8f3;
+  --papel-atl: #c4bebd;
+  --linea: #ddd2c4;
+  --blanco: #ffffff;
+  --error: #823a2f;
+  --exito: #2e7d32;
+
+  /*escallas*/
+  --esp-xs: 0.8rem;
+  --esp-sm: 1.6rem;
+  --esp-md: 2.4rem;
+  --esp-lg: 4rem;
+  --esp-xl: 6rem;
+  /*sombra*/
+
+  --radio: 0.6rem ;/*6px*/
+--sombra-1: 0 0.2rem 0.6rem rgba (0,0,0,0.6);/*APEMAS UNA SOMBRA*/
+--sombra-2: 0 0.4rem 1.2rem rgba (0,0,0,1.0);/*TARJETAS*/
+--sombra-3: 0 0.8rem 2.0rem rgba (0,0,0,1.6);/*ELEMENTOS elevados*/
+--transicion: 0.25s easy;
+--ancho-max: 120rem; /*1200px*/
+
+  /*fuente*/
+  --fuente-titulo: georgia, 'times new roman', serif;
+--fuente-texto: 'segoe ui' ,Arial, sans-serif;
+
+}
+  /*reset y base*/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--fuente-texto);
+  line-height: 1.6;
+  color: var(--tinta);
+  background-color: var(--papel);
+}
+
+/*SELECTORES DE ETIQUETA titulos */
+
+h1, h2, h3{
+  font-family: var(--fuente-titulo);
+  line-height: 1.2;
+  color: var(--marca);
+}
+
+h1{font-size: 4.4rem;}
+h2{font-size: 3rem;}
+h3{font-size: 2rem;}
+
+p{
+  margin-bottom: var(--esp-sm);
+  color: var(--fuente-texto);
+}
+
+a{
+  color: var(--acento);
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*contenedores*/
+#contenido{
+  max-width: var(--ancho-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--esp-lg) var(--esp-md);
+}
+
+#portada,
+#servicios,
+#historia,
+#existencias,
+#categorias,
+#pedido {
+  margin: var(--esp-xl);
+  
+} 
+
+#servicios > h2,
+#portada > h2,
+#historia > h2,
+#existencias > h2,
+#categorias > h2,
+#pedido> h2 {
+  margin-bottom: var(--esp-md);
+  padding-bottom: var(--esp-xl);
+  border-bottom: 0.2rem solid var(--linea);
+}
+
+#cabecera {
+  display: flex;
+  justify-content: space-between; /*un elemento lo pega a la derecha y el otrto a la izquierda */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--esp-sm);
+  max-width: var(--ancho-max); /*da ancho*/
+  margin: 0 auto; /*da centrado*/
+  padding: var(--esp-sm) var(--esp-md);
+  background-color: var(--blanco);
+  border: 0.1rem solid var(--linea);
+
+
+  /*estos 3 se usaron para que el header no se mueva SE USAN LOS 3*/
+  position: sticky;
+  top: 0;
+  z-index: 100%;
+}
+
+.marca h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0;
+}
+
+.lema {
+  font-size: 1.4rem;
+  color: var(--suave);
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/*menu cabecera*/
+
+.menu-principal ul {
+  display: flex;
+  gap: var(--esp-xs);
+  list-style: none; /*le quita los puntitos a la pagina a la hora de pobner links */
+}
+
+.menu-principal a{  
+  display: inline-block;/*permite aplicar padding y medidas (lo que no deja es el coso dein inicio con esta etiqueta si deja)*/
+  padding: var(--esp-xs) var(--esp-sm);
+  color: var(--tinta);
+  font-weight: 600;
+border-radius: var(--radio);
+transition: backgroun-color var(--transicion);
+}
+
+/*pseudo clase */
+.menu-principal a::hover{
+  background-color: var(--papel-atl);
+  color: var(--marca);
+
+}
+.menu-principal a focus{
+  outline: 0.2rem solid var(--acento);
+  outline-offset: 0.2rem; /*aaplica con el tab*/
+}
+.menu-principal .enlace-activo{
+  color: var(--acento);
+  background-color: var(--papel-atl);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--marca), var(--acento));
+  color: var(--blanco);
+  padding: var(--esp-xl) var(--esp-md);
+  border-radius: var(--radio);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-sm);
+}
+hero h2 { 
+  color: var(--blanco);
+  font-size: 3.6rem;
+  margin-bottom: 0;
+}
+.hero-texto{
+ max-width: 60ch;
+ font-size: 1.8rem;
+margin-bottom: var(--esp-xs);
+opacity: 0.94;
+}
+/*nota 1*/
+.rejilla-servicios {
+  display: flex;
+  gap: var(--esp-md);
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  flex: 1 1 28rem; /* nota 1 trabaja la parte resposive (lo que si se hace la pantalla mas pequeña se acomode)*/
+}
