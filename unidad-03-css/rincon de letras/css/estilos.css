@@ -201,4 +201,28 @@ opacity: 0.94;
 
 .tarjeta {
   flex: 1 1 28rem; /* nota 1 trabaja la parte resposive (lo que si se hace la pantalla mas pequeña se acomode)*/
+  background-color: var(--blanco);
+  padding: var(--esp-md);
+  border: 0.1rem solid var(--linea);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra-2);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transicion), box-shadow var(--transicion);
+}
+.tarjeta h3 {
+  margin-bottom: var(--esp-xs);
+}
+.tarjeta p{
+  color: var(--suave);
+  flex-grow: 1;
+}
+
+.tarjeta-pie{
+  margin-bottom: 0;
+  padding-top: var(--esp-xs);
+  border-top: 0.1rem solid var(--linea);
+  font-weight: 700;
+  color: var(--marca);
+  font-size: 1.5rem;
 }
