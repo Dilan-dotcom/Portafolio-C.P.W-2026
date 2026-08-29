@@ -206,6 +206,7 @@ transition: background-color var(--transicion) color var(--transicion);
     align-items: center;
     padding: var(--esp-md);
     text-align: center;
+    justify-content: center;
 }
 
 .portada-caja {
@@ -391,8 +392,4 @@ filter: grayscale(60%); /*el filtro quita el 60% de color*/
     color: var(--color-suave);
     text-align: center;
     font-style: italic;
-}
-.1{
-    bac
-    
 }
