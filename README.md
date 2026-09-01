@@ -143,7 +143,7 @@ Proyecto propio construido de forma autónoma.
 
 | Sesión | Tema                            | Qué aprendí |      Trabajo      |     Captura      |
 | :----: | :------------------------------ | :---------- | :---------------: | :--------------: |
-|  S23   | Viewport y anchos fluidos       |             | [ver](unidad-04/) | [ver](recursos/) |
+|  S23   | Viewport y anchos fluidos       |diferenciacion con con la etiqueta viewport y puntos de quiebre| [ver](/unidad-04-parte-responsiva/sitio-personalcontratacion-guardas/index.html) | [ver](recursos/sesion%2024%20evidencia.png) |
 |  S24   | Media queries y mobile-first    |             | [ver](unidad-04/) | [ver](recursos/) |
 |  S25   | Menú responsivo e impresión     |             | [ver](unidad-04/) | [ver](recursos/) |
 |  S26   | Imágenes y video adaptativos    |             | [ver](unidad-04/) | [ver](recursos/) |
