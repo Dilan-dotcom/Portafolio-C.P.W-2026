@@ -42,7 +42,11 @@ nav a{
     color: rgb(229, 230, 229);
     text-decoration: none;
 }
-
+#menu-nav{
+    display: inline-block;
+    align-items:end;
+    margin-left: 100px;
+}
 #fin{
     color: rgb(104, 61, 68);
     padding: 20px;
@@ -53,11 +57,9 @@ nav a {
     color:rgb(1, 21, 21);
     text-transform: capitalize;
     transition: color 0.3s;
-    margin-left: 90px;
+    margin-left: 100px;
     font-size: xx-large;
    
-    
-
 }
 
 nav a:hover{
@@ -100,6 +102,7 @@ nav a ul{
     padding: 20px 15px;
     margin: 15px;
     
+    
 }
 
 nav ul li{
@@ -114,10 +117,6 @@ nav ul li{
 }
 main a{
      border-bottom: 1px solid #a9aeb3;
-}
-header nav ul li{
-    display: inline;
-  
 }
 
 .prueba{
@@ -170,3 +169,4 @@ video{
     transform: scale(1,2);
      filter: contrast(1.5);
 }
+
