@@ -88,7 +88,7 @@ Proyecto propio construido de forma autónoma.
 
 | Página | Qué contiene | Sesiones aplicadas | Ver | Validación |
 |:-------|:-------------|:------------------:|:---:|:----------:|
-| `index.html` | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas | S03 · S04 · S06 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/index.html) | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/Recursos2/Captura-sitio-prototipo-2026-08-03%20210407.png|
+| `index.html` | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas | S03 · S04 · S06 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/index.html) | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/Recursos2/Captura-sitio-prototipo-2026-08-03%20210407.png)|
 | `listas.html` | Las tres listas, lista anidada y tabla con celdas combinadas | S05 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/listas.html) | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/listas.html) |
 | `contacto.html` | Formulario con ocho campos y validación de HTML | S06 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/Recursos2/Captura-contacto-2026-08-03%20210858.png) | [ver](recursos/sp-validacion-contacto.png) |
 | `galeria.html` | Imágenes, audio, video con subtítulos y gráficas SVG | S07 · S08 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/galeria.html) | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/galeria.html) |
