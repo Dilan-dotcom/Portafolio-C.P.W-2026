@@ -199,7 +199,7 @@ h1, h2, h3 {
      las dos líneas quedan muy separadas.                              */
   color: var(--color-marca);
 }
-
+/*tamaños para moviles (se refiere a que a la hora de programar para celular, estos tamaños son opcioness como variables para futuros proyectos )*/
 h1 { font-size: 3.2rem; }   /* 48px */
 h2 { font-size: 2.4rem; }   /* 32px */
 h3 { font-size: 2.0rem; }   /* 20px */
@@ -1945,7 +1945,7 @@ img {
      3. Verificar el contraste en webaim.org/resources/contrastchecker
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
-
+  /*modalidad movil first (osea prioridad para que se vea bien en moviles)*/
         @media (min-width: 768px) {
           .cabecera{
             flex-direction: row; 
