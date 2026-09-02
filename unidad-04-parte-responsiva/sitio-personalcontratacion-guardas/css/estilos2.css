@@ -93,6 +93,7 @@ body {
   font-family: "Protest Guerrilla";
 }
 header {
+  background-color: darkcyan;
   background-image: url(/unidad-03-css/sitio-personalcontratacion-guardas/Recursos2/images\ \(1\).jpg);
   background-size: cover;
   background-position: right;
