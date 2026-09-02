@@ -199,7 +199,7 @@ h1, h2, h3 {
      las dos líneas quedan muy separadas.                              */
   color: var(--color-marca);
 }
-
+/*tamaños para moviles (se refiere a que a la hora de programar para celular, estos tamaños son opcioness como variables para futuros proyectos )*/
 h1 { font-size: 3.2rem; }   /* 48px */
 h2 { font-size: 2.4rem; }   /* 32px */
 h3 { font-size: 2.0rem; }   /* 20px */
@@ -1945,7 +1945,7 @@ img {
      3. Verificar el contraste en webaim.org/resources/contrastchecker
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
-
+  /*modalidad movil first (osea prioridad para que se vea bien en moviles)*/
         @media (min-width: 768px) {
           .cabecera{
             flex-direction: row; 
@@ -1963,3 +1963,98 @@ img {
           .portada-caja{padding: var(--esp-lg);}
           .cita{padding: var(--esp-lg);}
         }
+
+        /*apartir de los 1024*/
+        @media (min-width: 1024px){
+        h1 {font-size: 4.8rem;} /*h1 recupera el tamaño original*/
+      .portada{min-height: 55rem;}/*portada con 550 px de alto ocupa casi toda la pantalla de un celular*/
+      .seccion{padding: var(--esp-xl) var(--esp-lg);}
+      }
+
+/*cuantos puntos de quiebre hacen falta*/
+/*para luz clara bastan con estos 2
+base        hasta 767px   telefono
+768px        tableta        
+1024px        escritorio */
+
+/*como se acumulan las 3 reglas
+en una pantalla de 1200px se aplican estas 3 reglas 
+1-la base 
+2-la de min-width : 768px  (1200 es mayor que 768)
+3- la de min-width: 1024px (1200 es mayor que 1024)
+Donde se repiyte un propiedad , gana la utima, por eso el orden importa : de menor a mayor 
+Si la la de 1024 estuviera antes de la regla de 768 , la ultima la anularia en pantallas grandes   */
+
+/* escala completa por tramos */
+
+/*base-telefono */
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.8rem;}
+body { font-size: 1.6rem;}
+
+/*escala tablets*/
+
+@media (min-width: 768px){
+h1 {font-size: 4.0rem;}
+h2 {font-size: 2.8rem;}
+h3 {font-size: 1.9rem;}
+
+}
+/*escala escritorio*/
+@media (min-width: 1024px){
+h1 {font-size: 4.8rem;}
+h2 {font-size: 3.2rem;}
+h3 {font-size: 2.0rem;}
+
+}
+
+/*tabla de contacto.html*/
+.tabla-envoltorio{/*despues de los 360px no hay forma razonable de que una tabla quepa sin perder la relacion entre datos*/
+  overflow: auto; /*esto la da la parte responsive a la tabla(que se adapte a diferentes tamaños)*/
+}
+@media (max-width: 768px){ /*se usa max en lugar de min porque en media querry ataca la parte movil , y el ajuste es solo para movil*/
+  .tabla th,
+  .tabla td {padding: var(--esp-xs);
+  font-size: 1.4rem;}
+}
+
+@media(min-width:768px){
+  main p {max-width: 65ch;}
+}
+
+/*en movil no hace falta adaptar texto de los parrafos , la pantalla lo hace . La adaptacion es pata de tablets hacia arriba por cpmodidad de  lecturas*/
+/*puntos de quiebre 
+base        hasta 767px   telefono
+768px        tableta        
+1024px      escritorio */
+
+/*TABLETA
+trabajamos a partir de 768px
+@media(min-width:768px){
+.cabecera e fila
+titulos mas grandes 
+mas relleno en las secciones 
+*/
+
+/*ESCRITORIO 
+trabajamos a partir de 1024px
+@media(min-width 1042px){
+portada mas alta
+titulos a tamaño completo 
+ 
+*/
+/*ajuste para pantallas pequeñas
+@media(min-width:768px){
+celdas tablas mas compacta
+ 
+*/
+
+/*accesibilidad del movimiento
+@media(prefer-reduce-motion:reduce;){
+va siempre al final del todo, desactiva las animaciones o movimientos que puedan causar epilepsia desde el sistema operativo en uso
+ 
+*/
+
+/*estos encabezados no son decorativos
+Quien habra esta hoj de estilos o para uno mismo , es para saber u obtenerr una idea de lo que se hizo, se puede o deberia hacer y de la estrageia que se uso */
