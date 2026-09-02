@@ -1963,3 +1963,24 @@ img {
           .portada-caja{padding: var(--esp-lg);}
           .cita{padding: var(--esp-lg);}
         }
+
+        /*apartir de los 1024*/
+        @media (min-width: 1024px){
+        h1 {font-size: 4.8rem;} /*h1 recupera el tamaño original*/
+      .portada{min-height: 55rem;}/*portada con 550 px de alto ocupa casi toda la pantalla de un celular*/
+      .seccion{padding: var(--esp-xl) var(--esp-lg);}
+      }
+
+/*cuantos puntos de quiebre hacen falta*/
+/*para luz clara bastan con estos 2
+base        hasta 767px   telefono
+768px        tableta        
+1024px        escritorio */
+
+/*como se acumulan las 3 reglas
+en una pantalla de 1200px se aplican estas 3 reglas 
+1-la base 
+2-la de min-width : 768px  (1200 es mayor que 768)
+3- la de min-width: 1024px (1200 es mayor que 1024)
+Donde se repiyte un propiedad , gana la utima, por eso el orden importa : de menor a mayor 
+Sila la de 1024 estuviera antes de la regla de 768 , la ultima la anularia en pantallas grandes   */
