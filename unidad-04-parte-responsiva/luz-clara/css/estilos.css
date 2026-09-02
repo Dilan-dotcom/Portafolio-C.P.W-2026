@@ -1983,4 +1983,43 @@ en una pantalla de 1200px se aplican estas 3 reglas
 2-la de min-width : 768px  (1200 es mayor que 768)
 3- la de min-width: 1024px (1200 es mayor que 1024)
 Donde se repiyte un propiedad , gana la utima, por eso el orden importa : de menor a mayor 
-Sila la de 1024 estuviera antes de la regla de 768 , la ultima la anularia en pantallas grandes   */
+Si la la de 1024 estuviera antes de la regla de 768 , la ultima la anularia en pantallas grandes   */
+
+/* escala completa por tramos */
+
+/*base-telefono */
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.8rem;}
+body { font-size: 1.6rem;}
+
+/*escala tablets*/
+
+@media (min-width: 768px){
+h1 {font-size: 4.0rem;}
+h2 {font-size: 2.8rem;}
+h3 {font-size: 1.9rem;}
+
+}
+/*escala escritorio*/
+@media (min-width: 1024px){
+h1 {font-size: 4.8rem;}
+h2 {font-size: 3.2rem;}
+h3 {font-size: 2.0rem;}
+
+}
+
+/*tabla de contacto.html*/
+.tabla-envoltorio{/*despues de los 360px no hay forma razonable de que una tabla quepa sin perder la relacion entre datos*/
+  overflow: auto; /*esto la da la parte responsive a la tabla(que se adapte a diferentes tamaños)*/
+}
+@media (max-width: 768px){ /*se usa max en lugar de min porque en media querry ataca la parte movil , y el ajuste es solo para movil*/
+  .tabla th,
+  .tabla td {padding: var(--esp-xs);
+  font-size: 1.4rem;}
+}
+
+@media(min-width:768px){
+  main p {max-width: 65ch;}
+}
+/*en movil no hace falta adaptar texto de los parrafos , la pantalla lo hace . La adaptacion es pata de tablets hacia arriba por cpmodidad de  lecturas*/
