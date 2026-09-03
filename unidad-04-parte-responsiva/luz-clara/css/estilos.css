@@ -2119,3 +2119,13 @@ width: auto;}
 }
 }
 
+@media (min-width:768px){ /*aqui si corresponde el display none porque el boton no debe existir en pantalla grande  */
+  .menu-boton{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
