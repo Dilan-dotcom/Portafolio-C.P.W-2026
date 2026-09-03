@@ -2128,4 +2128,22 @@ width: auto;}
     flex-direction: row;
   }
 }
+/*usar orientacion
+aplicar reglas segun si el dispositivo esta en vertical o horiontal */
+
+@media (orientation:landscape) and (max-heigth: 500px){
+  .portada{min-height: 100vh;
+  padding: var(--esp-sm);}
+  .portada-titulo{font-size: 2.4rem;}
+  .portada-bajada{font-size: 1.5rem;}
+}/*las consultas disponibles 
+@media (min-width: 768px) ancho minimo
+@media (max-width: 767px) ancho maximo
+@media (min-heigth: 600px) alto minimo
+@media (orientation: portrait) vertical
+@media (orientation:landscape) horizontal
+@media print impresion de la pagina
+@media (prefers-reduced-motion) preferencia de movimiento
+@media (prefers-color-scheme) tema oscuro
+*/
 
