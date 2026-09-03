@@ -1,9 +1,12 @@
 :root {
-  --esp-xs: 0.8rem; /*  8px */
-  --esp-sm: 1.6rem; /* 16px */
-  --esp-md: 2.4rem; /* 24px */
-  --esp-lg: 4rem; /* 40px */
-  --esp-xl: 8rem; /* 80px */
+  
+
+ /*  ESPACIADO  */
+  --esp-xs: 0.8rem;    /*  8px */
+  --esp-sm: 1.6rem;    /* 16px */
+  --esp-md: 2.4rem;    /* 24px */
+  --esp-lg: 4.0rem;    /* 40px */
+  --esp-xl: 8.0rem;    /* 80px */
 }
 
 * {
@@ -20,7 +23,7 @@
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: rgb(59, 61, 61);
+  background-color: rgb(75, 73, 81);
 }
 h1 {
   color: rgb(252, 252, 252);
@@ -42,15 +45,15 @@ p {
   color: rgb(0, 0, 0);
   font-size: medium;
   word-spacing: 2px;
-  padding: 10px;
+  
 }
 .resaltado {
   background-color: rgb(151, 151, 163);
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
   font-size: larger;
 }
 nav a {
-  color: rgb(56, 60, 56);
+  color: rgb(18, 17, 17);
   text-decoration: none;
 }
 #menu-nav {
@@ -86,7 +89,7 @@ nav a:hover {
 p:first-letter {
   font-size: larger;
   font-weight: bolder;
-  color: rgb(149, 132, 132);
+  color: rgb(55, 55, 55);
   text-transform: uppercase;
 }
 body {
@@ -94,16 +97,31 @@ body {
 }
 header {
   background-color: darkcyan;
-  background-image: url(recursos3/banner.jpg);
+  background-image: url(../recursos3/banner.jpg);
   background-size: cover;
-  background-position: right;
-  padding: 1px;
-  position: relative;
+  max-width: none;
+  width: 100%;
 }
-#intro {
-  text-transform: uppercase;
-  color: rgb(79, 82, 78);
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-sm);
+  justify-content: space-between;
+  align-items: center;
+  padding:var(--esp-lg) var(--esp-sm) ;
+  background-color: var(--color-blanco);
+  border-bottom: 0.1rem solid var(--color-linea);
+  position: sticky;
+  top: 0;    
+  z-index: 100;
+}
+.contenedorh{
+  display: flex;
+  flex-direction:  column;
   text-align: center;
+  text-transform: uppercase;
+  color: white;
+  
 }
 nav a ul {
   text-transform: uppercase;
@@ -142,6 +160,9 @@ main a {
 }
 ul li {
   display: inline-block;
+}
+#servicios{
+  background-color: #a9aeb3;
 }
 
 img {
