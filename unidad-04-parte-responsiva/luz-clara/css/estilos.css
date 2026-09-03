@@ -2062,3 +2062,20 @@ va siempre al final del todo, desactiva las animaciones o movimientos que puedan
 
 /*estos encabezados no son decorativos
 Quien habra esta hoj de estilos o para uno mismo , es para saber u obtenerr una idea de lo que se hizo, se puede o deberia hacer y de la estrageia que se uso */
+
+/*media querrie para patalla  grande */
+@media (min-width:768px){
+  .cabecera{flex-direction: row;
+  justify-content: space-between;
+align-items: center;}
+  .menu{flex-direction: row;
+  gap: var(--esp-sm);
+width: auto;}
+.menu-enlace{
+  display: inline-block;
+  padding: var(--esp-xs) var(--esp-sm);
+  border-bottom: none;
+  border-radius: var(--radio);
+}
+}
+
