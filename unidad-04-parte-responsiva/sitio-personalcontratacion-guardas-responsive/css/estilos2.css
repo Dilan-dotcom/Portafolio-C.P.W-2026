@@ -58,8 +58,10 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: rgb(75, 73, 81);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
   font-family: "Protest Guerrilla";
 }
 h1 {
@@ -79,7 +81,7 @@ h2 {
 }
 
 p {
-  color: rgb(0, 0, 0);
+  color: var(--text-main);
   font-size: medium;
   word-spacing: 2px;
 }
@@ -120,7 +122,12 @@ nav a:hover {
   color: rgb(245, 243, 240);
 }
 .destacar {
-  color: rgb(30, 29, 29);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  
+  
 }
 p:first-letter {
   font-weight: bolder;
@@ -129,8 +136,8 @@ p:first-letter {
 }
 
 header {
-  background-color: darkcyan;
-  background-image: url(../recursos3/banner.jpg);
+  background-color: var(--border-color);
+ 
   background-size: cover;
   max-width: none;
   width: 100%;
@@ -142,7 +149,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: var(--esp-lg) var(--esp-sm);
-  background-color: var(--color-blanco);
   border-bottom: 0.1rem solid var(--color-linea);
   position: sticky;
   top: 0;
@@ -164,7 +170,7 @@ nav a ul {
   padding: 20px 15px;
   margin: 15px;
 }
-
+.logito{margin-left: 10rem;}
 nav ul li {
   list-style-type: none;
 }
@@ -202,10 +208,7 @@ img {
   border: 2px solid white;
 }
 
-.logito {
-  margin-left: 800px;
-  margin-bottom: 5px;
-}
+
 img:hover {
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0, 5);
   transform: rotate(5deg);
@@ -297,9 +300,13 @@ video {
   }
 }
 .pequeño {
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+.lista1{
+  margin-left: 3rem;
 }
 /*responsive  tablet*/
 @media (min-width: 1024px) {
