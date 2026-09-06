@@ -50,7 +50,7 @@ Portafolio-Codificación de Páginas Web/
 
 | Sesión | Tema         | Qué aprendí                                                                                         |                                      Trabajo                                      |                          Captura                          |
 | :----: | :----------- | :-------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------: | :-------------------------------------------------------: |
-|  S01   | Git y GitHub | _(los primeros pasos avanzados para gurdar el portafolio de evidencias de manera mas profesional )_ | [ver](<//unidad-01-control-versiones/2.DESARROLLO-MarcoTeórico-Sesion1-2 (1).pdf) | [ver](/recursos/captura%20practica%20%20git%20hub%20.png) |
+|  S01   | Git y GitHub | _(los primeros pasos avanzados para gurdar el portafolio de evidencias de manera mas profesional )_ | [ver](/unidad-01-control-versiones/2.DESARROLLO-MarcoTeórico) | [ver](/recursos/captura%20practica%20%20git%20hub%20.png) |
 
 < markdown="1">
 
@@ -88,7 +88,7 @@ Proyecto propio construido de forma autónoma.
 
 | Página | Qué contiene | Sesiones aplicadas | Ver | Validación |
 |:-------|:-------------|:------------------:|:---:|:----------:|
-| `index.html` | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas | S03 · S04 · S06 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/index.html) | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/Recursos2/Captura-sitio-prototipo-2026-08-03%20210407.png |
+| `index.html` | Estructura semántica, metadatos, texto jerarquizado, citas, enlaces y anclas | S03 · S04 · S06 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/index.html) | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/Recursos2/Captura-sitio-prototipo-2026-08-03%20210407.png)|
 | `listas.html` | Las tres listas, lista anidada y tabla con celdas combinadas | S05 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/listas.html) | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/listas.html) |
 | `contacto.html` | Formulario con ocho campos y validación de HTML | S06 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/Recursos2/Captura-contacto-2026-08-03%20210858.png) | [ver](recursos/sp-validacion-contacto.png) |
 | `galeria.html` | Imágenes, audio, video con subtítulos y gráficas SVG | S07 · S08 | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/galeria.html) | [ver](/unidad-02-html/sitio-personalcontratacion-guardas/galeria.html) |
@@ -143,7 +143,7 @@ Proyecto propio construido de forma autónoma.
 
 | Sesión | Tema                            | Qué aprendí |      Trabajo      |     Captura      |
 | :----: | :------------------------------ | :---------- | :---------------: | :--------------: |
-|  S23   | Viewport y anchos fluidos       |             | [ver](unidad-04/) | [ver](recursos/) |
+|  S23   | Viewport y anchos fluidos       |diferenciacion con con la etiqueta viewport y puntos de quiebre| [ver](/unidad-04-parte-responsiva/sitio-personalcontratacion-guardas/index.html) | [ver](recursos/sesion%2024%20evidencia.png) |
 |  S24   | Media queries y mobile-first    |             | [ver](unidad-04/) | [ver](recursos/) |
 |  S25   | Menú responsivo e impresión     |             | [ver](unidad-04/) | [ver](recursos/) |
 |  S26   | Imágenes y video adaptativos    |             | [ver](unidad-04/) | [ver](recursos/) |

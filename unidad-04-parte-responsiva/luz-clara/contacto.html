@@ -34,6 +34,16 @@
 
     <nav class="navegacion" aria-label="Navegación principal">
       <ul class="menu">
+         <!--menu hamburgesa -->
+      <input type="checkbox" id="abrir-menu" class="menu-control">
+      <label for="abrir-menu" class="menu-boton">
+        <span class="menu-barra"></span>
+        <span class="menu-barra"></span>
+        <span class="menu-barra"></span>
+        <span class="menu-texto">Menu</span>
+      </label>
+     
+      <!--cierre menu hamburgesa-->
         <li><a href="index.html" class="menu-enlace">Inicio</a></li>
         <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
         <li><a href="nosotros.html" class="menu-enlace">Nosotros</a></li>
@@ -46,11 +56,13 @@
   <main id="contenido">
 
     <section id="intro" class="pagina-encabezado">
+       <nav class="navegacion" aria-label="Navegación principal">
+ 
       <h1 class="pagina-titulo">Hablemos de su proyecto</h1>
       <p class="pagina-bajada">
         Respondemos todas las solicitudes dentro de las siguientes 48 horas hábiles.
       </p>
-    </section>
+     </section>
 
     <!-- TARIFAS · aquí se practica el estilo de TABLA (S18) -->
     <section id="tarifas" class="seccion">
