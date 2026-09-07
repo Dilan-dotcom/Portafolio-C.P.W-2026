@@ -938,6 +938,20 @@ outline-offset: 0.2rem; }
   width: 100%;
 }
 
+/*base telefono una columna. layout shifter*/
+#historia .dos-columnas{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'imagen'
+                        'texto';
+gap:var(--esp-md) ;
+/*la idea es que en mivil la imagen va arriba .Una foto capta la atencion y situa el contenido antes de leer*/
+}
+
+#historia .columna-imagen{grid-area: imagen;}
+#historia .columna-texto{grid-area: texto;}
+
+
 .imagen-pie {
   margin-top: var(--esp-xs);
   font-size: 1.3rem;
@@ -2221,6 +2235,18 @@ ajustes para telefono */
 .tarjeta:last-child{flex-basis: 100%;}/*la tercera tarjeta ocupa el ancho completo, es una descicion estetica porque se ve mejor una tarjeta ancha que una tarjeta angosta y sola */
 
 }
+/*base tableta 2 columnas layout shifter imagen derecha*/
+@media(min-width: 768px){
+#historia .dos-columnas{grid-template-columns: 3rf 2fr;
+grid-template-areas: 'texto imagen' ;}
+}
+
+/*la imagen cambia de lado sin encogewr o bajar*/
+@media(min-width: 1200px){
+#historia .dos-columnas{grid-template-columns: 2rf 3fr;
+grid-template-areas: 'imagen texto' ;}
+}
+
 
 /*las consultas disponibles 
 @media (min-width: 768px) ancho minimo
