@@ -1,10 +1,9 @@
 :root {
-  
   --bg-surface: #111827;
   --bg-card-hover: #222c42;
 
   --text-main: #f9fafb;
- 
+
   --text-inverse: #3a7178;
 
   --accent-primary: #d4af37;
@@ -15,7 +14,6 @@
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
-  
 
   --border-color: #2d3748;
   --border-focus: #43474b;
@@ -60,7 +58,7 @@ body {
   background-color: var(--bg-card-hover);
   color: var(--bg-card);
   font-family: var(--font-body);
-  
+
   font-family: "Protest Guerrilla";
 }
 h1 {
@@ -88,11 +86,11 @@ nav a {
   color: rgb(29, 27, 27);
   text-decoration: none;
 }
-.menu-nav{
+.menu-nav {
   display: flex;
- gap: 25px;
+  gap: 25px;
 }
-.menu-nav a{
+.menu-nav a {
   justify-content: space-between;
   padding-right: 2rem;
 }
@@ -117,12 +115,18 @@ nav a {
 }
 
 nav a:hover {
-  color:var(--border-focus);
+  color: var(--border-focus);
 }
 .destacar {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: var(--bg-surface);
+
+  margin: 35px;
+}
+.datos-h3 {
+  text-align: center;
 }
 p:first-letter {
   font-weight: bolder;
@@ -184,7 +188,6 @@ main a {
 }
 
 .prueba {
-  
   text-align: center;
   word-spacing: 8px;
   letter-spacing: 5px;
@@ -195,10 +198,9 @@ main a {
   justify-content: space-evenly;
 }
 ul li {
-  
   display: inline-block;
 }
-.detalle{
+.detalle {
   text-align: center;
   font-size: x-large;
   margin: var(--esp-md);
@@ -230,20 +232,27 @@ video {
   align-items: first baseline;
   padding: 50px;
 }
-.contenedor-servicios{
+.contenedor-servicios {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-left: 50px;
 }
-.inicio-nota{
+.inicio-nota {
   background-color: #3a7178;
   border: 2px solid var(--border-focus);
   border-radius: 20px;
   padding: var(--esp-md);
 }
-.nota{text-align: center;}
-.texto-nota{ font-size: larger;}
-.defensa{text-align: center; color: rgb(20, 21, 21);}
+.nota {
+  text-align: center;
+}
+.texto-nota {
+  font-size: larger;
+}
+.defensa {
+  text-align: center;
+  color: rgb(20, 21, 21);
+}
 @media (min-width: 768px) {
   .cabecera {
     flex-direction: row;
@@ -326,9 +335,9 @@ video {
     min-height: 15rem;
   }
   .resaltado {
-     background-color: var(--border-focus);
+    background-color: var(--border-focus);
     padding: var(--esp-md) var(--esp-lg);
-    margin:var(--esp-lg);
+    margin: var(--esp-lg);
     border: 5px solid var(--bg-surface);
     border-radius: 20px;
   }
