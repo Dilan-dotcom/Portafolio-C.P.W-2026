@@ -581,6 +581,38 @@ outline-offset: 0.2rem; }
   font-size: 1.8rem;
   margin-bottom: var(--esp-md);
 }
+.video-envoltorio {
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
+
+  aspect-ratio: 16 / 9;
+  /* Mantiene la proporción sin importar el ancho de la pantalla.
+     La altura se calcula sola a partir del ancho disponible.
+     Antes de que existiera esta propiedad, conseguirlo requería un
+     truco con relleno en porcentaje que costaba explicar.            */
+
+  background-color: var(--color-tinta);
+  /* Color de respaldo mientras el video carga. Sin esto se ve un
+     hueco transparente que parece un error.                          */
+
+  border-radius: var(--radio);
+  overflow: hidden;
+  /* Recorta las esquinas del video para que sigan el redondeado del
+     envoltorio.                                                      */
+
+  box-shadow: var(--sombra-2);
+}
+
+.video-envoltorio video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Igual que con las imágenes: RECORTA en vez de DEFORMAR si la
+     proporción del archivo no coincide con la del envoltorio.        */
+  display: block;
+}
+
 
 
 /* 6 · SERVICIOS · FLEXBOX           tema de la S16
@@ -1350,6 +1382,13 @@ outline-offset: 0.2rem; }
   margin-bottom: 0;
 }
 
+/*5 patrones 
+5 formas en que un diseño puede organizarse al cambiar el ancho
+1-mostly fluid. regilla que se encoje y al llegar al minmo sus elementos bajan de linea .En pantalla grande se deteiene y se centra
+2-columnn. groupo de columnas que se apilan una debajo de la otra al angostar.lo que hace flex-wrap: wrap
+3-layout shifter . las zonas cambian de posicion no con el html si no con el css. se resuelve con grid
+4-tiny swaeks. se usa solo en tamaños y espacios , para contenido de una sola columna 
+5-off canvas. contenido que vive fuera de las pantalllas y entra al pedirlo por ejemplo el menu hamburgesa */
 
 /* 16 · MOVIMIENTO           tema de la S19
 
@@ -2157,6 +2196,18 @@ aplicar reglas segun si el dispositivo esta en vertical o horiontal */
 .fila-etiquetas{
   display: none;
 }
+/*AJUSTE PARA PANTALLA PEQUEÑA
+
+  Se agrega dentro de la media query que ya existe.*/
+
+@media (max-width: 767px) {
+  .video-envoltorio {
+    border-radius: 0;
+    /* En un teléfono el video ocupa casi todo el ancho: las esquinas
+       redondeadas dejan franjas del fondo que se ven como un error
+       de encuadre.                                                   */
+  }
+}
 
 /*ahorrar tinta*/
 
@@ -2190,4 +2241,12 @@ main a[href^="http"]::after{
   
 
 }
+}
+
+@media print {
+  .video-envoltorio{
+    display: none;
+  }
+/*un video de papel  no sirve se se puede reproducir un video en papelsi se requiera una prueba impresa de que el video existe se sustitulle por su portada*/
+
 }
