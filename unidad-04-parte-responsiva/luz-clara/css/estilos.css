@@ -2184,7 +2184,45 @@ aplicar reglas segun si el dispositivo esta en vertical o horiontal */
   padding: var(--esp-sm);}
   .portada-titulo{font-size: 2.4rem;}
   .portada-bajada{font-size: 1.5rem;}
-}/*las consultas disponibles 
+}
+
+/*mostly fluids en galeria
+ajustes para telefono */
+@media (max-width:600px){
+  .mosaico{
+    grid-template-columns: 1fr; /*una sola columna de 360px , 2 columnas de 180px  las fotos dejan de apreciarse */
+    grid-auto-rows: 24rem;
+  }
+
+.pieza-ancha,
+.pieza-alta,
+.pieza-grande{
+  grid-column: auto;
+  grid-row: auto;
+  /*adaptar mosaicos a piezas de distinto tamaño*/
+}
+}
+
+/*mostly flid .mosaico en galeria.html*/
+/*tope pantalla grande*/
+
+@media (min-width:1400px){
+  .mosaico{
+    max-width: 130rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*este patron no solo se encoge tambien se detiene*/
+}
+/*patron column drop en zonas de columnas-tarjetas de index.html */
+@media (min-width: 620px) and (max-width: 900px){
+  .tarjeta{flex: 1 1 calc(50%- var(--esp-md));} /*fuerza o obliga a  2 por linea , calc() tambien permite mezclar unidades */
+.tarjeta:last-child{flex-basis: 100%;}/*la tercera tarjeta ocupa el ancho completo, es una descicion estetica porque se ve mejor una tarjeta ancha que una tarjeta angosta y sola */
+
+}
+
+/*las consultas disponibles 
 @media (min-width: 768px) ancho minimo
 @media (max-width: 767px) ancho maximo
 @media (min-heigth: 600px) alto minimo
@@ -2281,3 +2319,4 @@ main a[href^="http"]::after{
 /*un video de papel  no sirve se se puede reproducir un video en papelsi se requiera una prueba impresa de que el video existe se sustitulle por su portada*/
 
 }
+
