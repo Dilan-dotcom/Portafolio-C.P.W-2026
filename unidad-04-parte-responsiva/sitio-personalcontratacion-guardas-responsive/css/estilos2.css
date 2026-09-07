@@ -1,12 +1,11 @@
 :root {
-  --bg-primary: #090d16;
+  
   --bg-surface: #111827;
-  --bg-card: #1a2234;
   --bg-card-hover: #222c42;
 
   --text-main: #f9fafb;
-  --text-muted: #9ca3af;
-  --text-inverse: #090d16;
+ 
+  --text-inverse: #3a7178;
 
   --accent-primary: #d4af37;
   --accent-hover: #e5c158;
@@ -16,10 +15,10 @@
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
-  --color-info: #3b82f6;
+  
 
   --border-color: #2d3748;
-  --border-focus: #d4af37;
+  --border-focus: #43474b;
 
   --font-heading: "Outfit", "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
@@ -58,10 +57,10 @@
 }
 
 body {
-  background-color: var(--bg-primary);
-  color: var(--text-main);
+  background-color: var(--bg-card-hover);
+  color: var(--bg-card);
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
+  
   font-family: "Protest Guerrilla";
 }
 h1 {
@@ -86,18 +85,21 @@ p {
   word-spacing: 2px;
 }
 .resaltado {
-  background-color: rgb(151, 151, 163);
+  background-color: var(--border-focus);
   padding: 15px;
   font-size: larger;
 }
 nav a {
-  color: rgb(18, 17, 17);
+  color: rgb(29, 27, 27);
   text-decoration: none;
 }
-#menu-nav {
-  display: inline-block;
-  align-items: end;
-  margin-left: 150px;
+.menu-nav{
+  display: flex;
+ gap: 25px;
+}
+.menu-nav a{
+  justify-content: space-between;
+  padding-right: 2rem;
 }
 #fin {
   display: flex;
@@ -111,15 +113,16 @@ nav a {
 }
 
 nav a {
-  color: rgb(1, 21, 21);
+  color: rgb(223, 236, 236);
   text-transform: capitalize;
   transition: color 0.3s;
-  margin-left: 100px;
+  gap: 20px;
   font-size: xx-large;
+  text-align: center;
 }
 
 nav a:hover {
-  color: rgb(245, 243, 240);
+  color:var(--border-focus);
 }
 .destacar {
   display: flex;
@@ -160,10 +163,11 @@ header {
 }
 nav a ul {
   text-transform: uppercase;
+  justify-content: space-evenly;
   letter-spacing: 1px;
   font-size: 1rem;
   text-decoration: none;
-  color: rgb(86, 129, 143);
+  color: rgb(233, 240, 240);
   padding: 20px 15px;
   margin: 15px;
 }
@@ -185,21 +189,21 @@ main a {
 }
 
 .prueba {
-  margin-left: 300px;
-  margin-top: 10px;
+ 
+  text-align: center;
   word-spacing: 8px;
   letter-spacing: 5px;
 }
 .alinear {
-  text-align: center;
-  display: inline;
-  margin-left: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ 
+  
+  
 }
 ul li {
   display: inline-block;
-}
-#servicios {
-  background-color: #a9aeb3;
 }
 
 img {
@@ -234,7 +238,7 @@ video {
   .cabecera {
     flex-direction: row;
     /*cabecerapasa de fila a columna*/
-    gap: var(--esp-md);
+    gap: var(--esp-lg);
     justify-content: space-between;
     align-items: center;
   }
@@ -313,6 +317,9 @@ video {
   }
   .resaltado {
     padding: var(--esp-xl) var(--esp-lg);
+    margin:var(--esp-lg);
+    border: 5px solid var(--bg-surface);
+    border-radius: 20px;
   }
 
   h1 {
