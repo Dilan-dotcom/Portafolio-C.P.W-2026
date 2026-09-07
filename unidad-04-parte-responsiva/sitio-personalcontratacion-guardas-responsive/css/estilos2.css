@@ -81,14 +81,9 @@ h2 {
 
 p {
   color: var(--text-main);
-  font-size: medium;
   word-spacing: 2px;
 }
-.resaltado {
-  background-color: var(--border-focus);
-  padding: 15px;
-  font-size: larger;
-}
+
 nav a {
   color: rgb(29, 27, 27);
   text-decoration: none;
@@ -189,7 +184,7 @@ main a {
 }
 
 .prueba {
- 
+  
   text-align: center;
   word-spacing: 8px;
   letter-spacing: 5px;
@@ -198,14 +193,16 @@ main a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
- 
-  
-  
 }
 ul li {
+  
   display: inline-block;
 }
-
+.detalle{
+  text-align: center;
+  font-size: x-large;
+  margin: var(--esp-md);
+}
 img {
   margin-left: 200px;
   border: 2px solid white;
@@ -233,7 +230,20 @@ video {
   align-items: first baseline;
   padding: 50px;
 }
-
+.contenedor-servicios{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 50px;
+}
+.inicio-nota{
+  background-color: #3a7178;
+  border: 2px solid var(--border-focus);
+  border-radius: 20px;
+  padding: var(--esp-md);
+}
+.nota{text-align: center;}
+.texto-nota{ font-size: larger;}
+.defensa{text-align: center; color: rgb(20, 21, 21);}
 @media (min-width: 768px) {
   .cabecera {
     flex-direction: row;
@@ -316,7 +326,8 @@ video {
     min-height: 15rem;
   }
   .resaltado {
-    padding: var(--esp-xl) var(--esp-lg);
+     background-color: var(--border-focus);
+    padding: var(--esp-md) var(--esp-lg);
     margin:var(--esp-lg);
     border: 5px solid var(--bg-surface);
     border-radius: 20px;
