@@ -581,6 +581,38 @@ outline-offset: 0.2rem; }
   font-size: 1.8rem;
   margin-bottom: var(--esp-md);
 }
+.video-envoltorio {
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
+
+  aspect-ratio: 16 / 9;
+  /* Mantiene la proporción sin importar el ancho de la pantalla.
+     La altura se calcula sola a partir del ancho disponible.
+     Antes de que existiera esta propiedad, conseguirlo requería un
+     truco con relleno en porcentaje que costaba explicar.            */
+
+  background-color: var(--color-tinta);
+  /* Color de respaldo mientras el video carga. Sin esto se ve un
+     hueco transparente que parece un error.                          */
+
+  border-radius: var(--radio);
+  overflow: hidden;
+  /* Recorta las esquinas del video para que sigan el redondeado del
+     envoltorio.                                                      */
+
+  box-shadow: var(--sombra-2);
+}
+
+.video-envoltorio video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Igual que con las imágenes: RECORTA en vez de DEFORMAR si la
+     proporción del archivo no coincide con la del envoltorio.        */
+  display: block;
+}
+
 
 
 /* 6 · SERVICIOS · FLEXBOX           tema de la S16
@@ -1019,8 +1051,17 @@ outline-offset: 0.2rem; }
   font-size: 1.4rem;
   text-align: right;
 }
+/*tiny tweaks ,cambios bara base telefno*/
+#testimonio p,
+.cita-texto{
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/*cambios para base tableta */
 
 
+/*cambio tarjeta*/
 /* 12 · TABLA           tema de la S18
 
    Lo que hace profesional a una tabla no es ningún efecto llamativo:
@@ -1350,6 +1391,13 @@ outline-offset: 0.2rem; }
   margin-bottom: 0;
 }
 
+/*5 patrones 
+5 formas en que un diseño puede organizarse al cambiar el ancho
+1-mostly fluid. regilla que se encoje y al llegar al minmo sus elementos bajan de linea .En pantalla grande se deteiene y se centra
+2-columnn. groupo de columnas que se apilan una debajo de la otra al angostar.lo que hace flex-wrap: wrap
+3-layout shifter . las zonas cambian de posicion no con el html si no con el css. se resuelve con grid
+4-tiny swaeks. se usa solo en tamaños y espacios , para contenido de una sola columna 
+5-off canvas. contenido que vive fuera de las pantalllas y entra al pedirlo por ejemplo el menu hamburgesa */
 
 /* 16 · MOVIMIENTO           tema de la S19
 
@@ -2136,7 +2184,45 @@ aplicar reglas segun si el dispositivo esta en vertical o horiontal */
   padding: var(--esp-sm);}
   .portada-titulo{font-size: 2.4rem;}
   .portada-bajada{font-size: 1.5rem;}
-}/*las consultas disponibles 
+}
+
+/*mostly fluids en galeria
+ajustes para telefono */
+@media (max-width:600px){
+  .mosaico{
+    grid-template-columns: 1fr; /*una sola columna de 360px , 2 columnas de 180px  las fotos dejan de apreciarse */
+    grid-auto-rows: 24rem;
+  }
+
+.pieza-ancha,
+.pieza-alta,
+.pieza-grande{
+  grid-column: auto;
+  grid-row: auto;
+  /*adaptar mosaicos a piezas de distinto tamaño*/
+}
+}
+
+/*mostly flid .mosaico en galeria.html*/
+/*tope pantalla grande*/
+
+@media (min-width:1400px){
+  .mosaico{
+    max-width: 130rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*este patron no solo se encoge tambien se detiene*/
+}
+/*patron column drop en zonas de columnas-tarjetas de index.html */
+@media (min-width: 620px) and (max-width: 900px){
+  .tarjeta{flex: 1 1 calc(50%- var(--esp-md));} /*fuerza o obliga a  2 por linea , calc() tambien permite mezclar unidades */
+.tarjeta:last-child{flex-basis: 100%;}/*la tercera tarjeta ocupa el ancho completo, es una descicion estetica porque se ve mejor una tarjeta ancha que una tarjeta angosta y sola */
+
+}
+
+/*las consultas disponibles 
 @media (min-width: 768px) ancho minimo
 @media (max-width: 767px) ancho maximo
 @media (min-heigth: 600px) alto minimo
@@ -2157,7 +2243,27 @@ aplicar reglas segun si el dispositivo esta en vertical o horiontal */
 .fila-etiquetas{
   display: none;
 }
+/*AJUSTE PARA PANTALLA PEQUEÑA
 
+  Se agrega dentro de la media query que ya existe.*/
+
+@media (max-width: 767px) {
+  .video-envoltorio {
+    border-radius: 0;
+    /* En un teléfono el video ocupa casi todo el ancho: las esquinas
+       redondeadas dejan franjas del fondo que se ven como un error
+       de encuadre.                                                   */
+  }
+}
+/*cambios para base tableta */
+@media(min-width:768px){
+  #testimonio p{ font-size: 1.7rem ; 
+    max-width: 65ch;
+    /*el limite en la linea aparece despues de tableta*/
+  }
+  .cita {padding: var(--esp-lg);}
+  .cita-texto{font-size: 0.2rem;}
+}
 /*ahorrar tinta*/
 
 body{
@@ -2165,6 +2271,20 @@ body{
   color: black;
   font-size: 11pt;
 }
+/*cambios para base escritorio */
+@media(min-width:1024px){
+  #testimonio p{ font-size: 1.8rem ; 
+    line-height: 1.7
+    /*el limite en la linea aparece despues de escritorio*/
+  }
+  .cita {padding: var(--esp-lg);}
+  .cita-texto{font-size: 0.2rem;}
+}
+
+
+
+
+
 
 .sccion,
 .seccion-alterna{
@@ -2191,3 +2311,12 @@ main a[href^="http"]::after{
 
 }
 }
+
+@media print {
+  .video-envoltorio{
+    display: none;
+  }
+/*un video de papel  no sirve se se puede reproducir un video en papelsi se requiera una prueba impresa de que el video existe se sustitulle por su portada*/
+
+}
+
