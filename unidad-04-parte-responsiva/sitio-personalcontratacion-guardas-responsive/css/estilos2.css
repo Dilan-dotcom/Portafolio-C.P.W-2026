@@ -218,12 +218,35 @@ img {
 
 img:hover {
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0, 5);
-  transform: rotate(5deg);
-  filter: invert(500%);
+   transform: scale(1.1, 0.9);
+  
 }
 video {
   margin-left: 300px;
 }
+.galeria-contenedor{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+gap: 20px;
+
+}
+
+.galeria-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  
+}
+
+
+.galeria-item img {
+ 
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease; /
+}
+
+.oficinas{grid-column: span 2;}
 .textico {
   text-align: center;
   font-weight: 70;
