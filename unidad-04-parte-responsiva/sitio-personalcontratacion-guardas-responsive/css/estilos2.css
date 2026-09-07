@@ -253,6 +253,22 @@ video {
   text-align: center;
   color: rgb(20, 21, 21);
 }
+fieldset{
+  padding: 0,5rem;
+  margin: 50px;}
+  fieldset p { margin: 20px;}
+
+  .button-c{
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: #3a7178;
+    color: #141515;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+  }
+.button-c:focus{ outline: 0.2rem solid var(--bg-card-hover); outline-offset: 0.2rem }
+.button-c:hover{background-color: rgb(66, 66, 70); color: white;}
 @media (min-width: 768px) {
   .cabecera {
     flex-direction: row;
