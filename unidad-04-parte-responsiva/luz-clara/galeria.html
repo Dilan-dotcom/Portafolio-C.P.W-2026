@@ -109,6 +109,25 @@
       </ul>
     </section>
 
+<!--patron off canvas-->
+<!--la idea del patron , es generar ycontenido secundario que en pantalla ancha se ve siempre y em pantalla pequeña vive fuera de al vista y entra al pedirlo-->
+<input type="checkbox" id="abrir-filtros" class="panel-control">
+<label for="abrir-filtros" class="panel-boton">
+  Filtrar por categoria
+</label>
+<aside id="filtros" class="panel-lateral">
+  <h2 class="panel-titulo">Categorias</h2>
+  <ul class="panel-lista">
+    <li><a href="#mosaico" class="panel-enlace">Todo el trabajo</a></li>
+     <li><a href="#retrato" class="panel-enlace">Retrato</a></li>
+      <li><a href="#producto" class="panel-enlace">Productos</a></li>
+       <li><a href="#eventos" class="panel-enlace">Eventos</a></li>
+  </ul>
+  <label for="abrir-filtros" class="panel-cerrar">Cerrar</label>
+</aside>
+
+
+
     <!-- MOSAICO PRINCIPAL · CSS GRID con piezas de distinto tamaño
          Es la pieza central de esta página -->
     <section id="mosaico" class="seccion seccion-alterna">
