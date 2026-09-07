@@ -240,7 +240,7 @@ gap: 20px;
 
 
 .galeria-item img {
- 
+  
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease; /
