@@ -1051,8 +1051,17 @@ outline-offset: 0.2rem; }
   font-size: 1.4rem;
   text-align: right;
 }
+/*tiny tweaks ,cambios bara base telefno*/
+#testimonio p,
+.cita-texto{
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/*cambios para base tableta */
 
 
+/*cambio tarjeta*/
 /* 12 · TABLA           tema de la S18
 
    Lo que hace profesional a una tabla no es ningún efecto llamativo:
@@ -2208,7 +2217,15 @@ aplicar reglas segun si el dispositivo esta en vertical o horiontal */
        de encuadre.                                                   */
   }
 }
-
+/*cambios para base tableta */
+@media(min-width:768px){
+  #testimonio p{ font-size: 1.7rem ; 
+    max-width: 65ch;
+    /*el limite en la linea aparece despues de tableta*/
+  }
+  .cita {padding: var(--esp-lg);}
+  .cita-texto{font-size: 0.2rem;}
+}
 /*ahorrar tinta*/
 
 body{
@@ -2216,6 +2233,20 @@ body{
   color: black;
   font-size: 11pt;
 }
+/*cambios para base escritorio */
+@media(min-width:1024px){
+  #testimonio p{ font-size: 1.8rem ; 
+    line-height: 1.7
+    /*el limite en la linea aparece despues de escritorio*/
+  }
+  .cita {padding: var(--esp-lg);}
+  .cita-texto{font-size: 0.2rem;}
+}
+
+
+
+
+
 
 .sccion,
 .seccion-alterna{
