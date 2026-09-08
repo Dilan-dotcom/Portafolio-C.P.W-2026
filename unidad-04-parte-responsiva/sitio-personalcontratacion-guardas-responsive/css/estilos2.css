@@ -141,6 +141,7 @@ header {
   background-size: cover;
   max-width: none;
   width: 100%;
+  
 }
 .cabecera {
   display: flex;
@@ -153,6 +154,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 5px solid white;
 }
 
 .cabecera1 {
@@ -166,6 +168,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 5px solid white;
 }
 
 .contenedorj {
@@ -175,6 +178,7 @@ header {
   text-transform: uppercase;
   color: white;
   gap: 15px;
+  text-shadow: 6px 6px 0px #0c0c0c;
 }
 
 
@@ -184,6 +188,7 @@ header {
   text-transform: uppercase;
   color: white;
   gap: 15px;
+  text-shadow: 6px 6px 0px #0c0c0c;
 }
 .texto-header{
   display: flex;
@@ -224,7 +229,8 @@ main a {
 .tabla tr:nth-child(odd) {background-color: white; color: black;}
 .tabla tr:nth-child(even) {background-color: black; color:white;}
 .tabla caption{margin-bottom: 10px;}
-.tabla caption::after { content: "🕒"; position: absolute;}
+.tabla caption::after { content: "🕒"; position: absolute; }
+
 .prueba {
   text-align: center;
   word-spacing: 8px;
@@ -260,10 +266,11 @@ video {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
 gap: 20px;
-
+padding: 20px;
 }
 
 .galeria-item {
+  width: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -272,7 +279,8 @@ gap: 20px;
 
 
 .galeria-item img {
-  
+  width: 100%;
+  height: 500px;
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease; /
