@@ -148,7 +148,7 @@ Proyecto propio construido de forma autónoma.
 |  S25   | Menú responsivo e impresión     |             | [ver](unidad-04/) | [ver](recursos/) |
 |  S26   | Imágenes y video adaptativos    |             | [ver](unidad-04/) | [ver](recursos/) |
 |  S27   | Patrones de diseño adaptativo I |             | [ver](unidad-04/) | [ver](recursos/) |
-|  S28   | Patrones II y repaso            |             | [ver](unidad-04/) | [ver](recursos/) |
+|  S28   | Patrones II y repaso            |repaso de la materia| [ver](unidad-04/) | [ver](recursos/) |
 
 </details>
 
