@@ -270,7 +270,7 @@ padding: 20px;
 }
 
 .galeria-item {
-  width: 100%;
+  max-width: 80%;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
