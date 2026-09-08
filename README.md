@@ -144,11 +144,11 @@ Proyecto propio construido de forma autónoma.
 | Sesión | Tema                            | Qué aprendí |      Trabajo      |     Captura      |
 | :----: | :------------------------------ | :---------- | :---------------: | :--------------: |
 |  S23   | Viewport y anchos fluidos       |diferenciacion con con la etiqueta viewport y puntos de quiebre| [ver](/unidad-04-parte-responsiva/sitio-personalcontratacion-guardas/index.html) | [ver](recursos/sesion%2024%20evidencia.png) |
-|  S24   | Media queries y mobile-first    |             | [ver](unidad-04/) | [ver](recursos/) |
-|  S25   | Menú responsivo e impresión     |             | [ver](unidad-04/) | [ver](recursos/) |
-|  S26   | Imágenes y video adaptativos    |             | [ver](unidad-04/) | [ver](recursos/) |
-|  S27   | Patrones de diseño adaptativo I |             | [ver](unidad-04/) | [ver](recursos/) |
-|  S28   | Patrones II y repaso            |repaso de la materia| [ver](unidad-04/) | [ver](recursos/) |
+|  S24   | Media queries y mobile-first    | enfoque objetivo no solo a diseñar a una pantalla si no a diferentes medidas | [ver](unidad-04-parte-responsiva/luz-clara/css/) -parte-responsiva/luz-clara/css/) | [ver](recursos/) |
+|  S25   | Menú responsivo e impresión     |   menu especifico para celular  | [ver](unidad-04-parte-responsiva/luz-clara/css/)  | [ver](recursos/) |
+|  S26   | Imágenes y video adaptativos    | escalamos y adaptamos imagenes a diferentes tipos de pantallas | [ver](unidad-04-parte-responsiva/luz-clara/css/) | [ver](recursos/) |
+|  S27   | Patrones de diseño adaptativo I |  medidas adaptativas a diferentes pantallas | [ver](unidad-04-parte-responsiva/luz-clara/css/)  | [ver](recursos/) |
+|  S28   | Patrones II y repaso            |repaso de la materia| [ver](unidad-04-parte-responsiva/luz-clara/css/)  | [ver](recursos/) |
 
 </details>
 
