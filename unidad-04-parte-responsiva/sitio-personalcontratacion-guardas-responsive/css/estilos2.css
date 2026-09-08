@@ -144,6 +144,19 @@ header {
 }
 .cabecera {
   display: flex;
+  flex-direction: column;
+  gap: var(--esp-sm);
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--esp-lg) var(--esp-sm);
+  border-bottom: 0.1rem solid var(--color-linea);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.cabecera1 {
+  display: flex;
   flex-direction: row;
   gap: var(--esp-sm);
   justify-content: space-between;
@@ -154,9 +167,19 @@ header {
   top: 0;
   z-index: 100;
 }
-.contenedorh {
+
+.contenedorj {
   align-items: center;
   display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  gap: 15px;
+}
+
+
+.contenedorh {
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: white;
