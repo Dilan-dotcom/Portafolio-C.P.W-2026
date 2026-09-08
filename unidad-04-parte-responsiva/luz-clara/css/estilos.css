@@ -859,13 +859,14 @@ outline-offset: 0.2rem; }
   position: fixed;
   top: 0;
   left: 0;
+  width: 18rem;
   height: 100vh;
   background-color: var(--color-blanco);
   box-shadow: var(--sombra-3);
   padding: var(--esp-lg) var(--esp-md);
   z-index: 200;
-  transform: translatex(-100%);/*vive fuera de la pantalla y se desplaza 100 de su propio ancho y hacia la izquierda*/
-  overflow-y: auto;
+  transform:translatex(-100%);/*vive fuera de la pantalla y se desplaza 100 de su propio ancho y hacia la izquierda*/
+  overflow-y:auto;
 }
 
 /*hacer que el panel se deslice*/
@@ -879,7 +880,7 @@ outline-offset: 0.2rem; }
   transform: translateX(0);
   /*vuelve a s u posicion deslizandose desde la izquierda*/
 }
-/*la capa oscura de fonto*/
+/*la capa oscura de fonto
 .panel-control:checked ~ .panel-lateral::before{
   content: '';
   position: fixed;
@@ -888,8 +889,23 @@ outline-offset: 0.2rem; }
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.45);
-  z-index: -1;
-  /*oscyrece el resto de la pagina mientras el panell¿ esta abierto*/
+  z-index: -1;}
+  /*oscyrece el resto de la pagina mientras el panellesta abierto*/
+/*la capa oscura */
+.panel-fondo{
+  position: fixed;
+  inset: 0;/*indica que top botton rigth y left en 0 y tambien cubre pantalla completa */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 150;
+  opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.panel-control:checked ~ .panel-fondo{
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
 }
 
 /*botonn y el cierre*/
@@ -2317,6 +2333,35 @@ grid-template-areas: 'texto imagen' ;}
 #historia .dos-columnas{grid-template-columns: 2rf 3fr;
 grid-template-areas: 'imagen texto' ;}
 }
+
+/*off canvas solo para pantallas pequeñas*/
+@media(min-width:1024px){
+  .panel-boton,
+  .panel-cerrar {
+  display: none;
+  }
+  .panel-fondo{
+    display: none;
+  }
+.panel-lateral{
+  position: static;
+  transform: none;
+  width: auto;
+  height: auto;
+  padding-left: 5rem;
+  z-index: auto;
+}
+
+#mosaico{
+  display: grid;
+  grid-template-columns: 24rem, 1fr;
+  gap: var(--esp-lg);
+  align-items: center;
+}
+}
+
+
+
 
 
 /*las consultas disponibles 
