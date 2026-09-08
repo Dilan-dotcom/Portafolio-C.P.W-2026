@@ -218,8 +218,9 @@ nav ul li {
   font-size: 2rem;
   text-decoration: underline;
   color: rgb(99, 104, 100);
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 5rem;
 }
 
 .tabla td{text-align: center; padding: 0.5rem; text-decoration:none }
