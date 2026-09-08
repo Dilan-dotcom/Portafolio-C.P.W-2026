@@ -206,16 +206,25 @@ nav ul li {
   list-style-type: none;
 }
 .tabla {
+  position: relative;
+ margin: 0 auto;/*esto ayuda a centrar cosas*/
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 2rem;
   text-decoration: underline;
   color: rgb(99, 104, 100);
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
+
+.tabla td{text-align: center; padding: 0.5rem; text-decoration:none }
 main a {
   border-bottom: 1px solid #a9aeb3;
 }
-
+.tabla tr:nth-child(odd) {background-color: white; color: black;}
+.tabla tr:nth-child(even) {background-color: black; color:white;}
+.tabla caption{margin-bottom: 10px;}
+.tabla caption::after { content: "🕒"; position: absolute;}
 .prueba {
   text-align: center;
   word-spacing: 8px;
