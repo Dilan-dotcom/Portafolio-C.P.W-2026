@@ -157,7 +157,7 @@ Proyecto propio construido de forma autónoma.
 
 | Sesión | Tema                          | Qué aprendí |      Trabajo      |     Captura      |
 | :----: | :---------------------------- | :---------- | :---------------: | :--------------: |
-|  S31   | Librerías y frameworks        |             | [ver](unidad-05/) | [ver](recursos/) |
+|  S31   | Librerías y frameworks        |introduccion de frameworks y prueba diagnostica     | [ver](unidad-05-frameworks/index.html) | [ver](recursos/Captura%20unidad%20frameworks%20.png) |
 |  S32   | Sistema de rejilla I          |             | [ver](unidad-05/) | [ver](recursos/) |
 |  S33   | Sistema de rejilla II         |             | [ver](unidad-05/) | [ver](recursos/) |
 |  S34   | Tipografía y utilidades       |             | [ver](unidad-05/) | [ver](recursos/) |
