@@ -131,8 +131,8 @@ Proyecto propio construido de forma autónoma.
 |  S14   | Modelo de cajas            |    modelos de cajas y padding         | [ver](/unidad-03-css/css/estilos.css) | [ver](/recursos/Captura%20de%20pantalla%202026-07-24%20145405.png) |
 |  S15   | Display y posicionamiento  | posicionamiento y display            | [ver](/unidad-03-css/css/estilos.css) | [ver](/unidad-03-css/sitio-demo/recursos/seion%2015.png.png) |
 |  S16   | Flexbox                    |flex box ,alimeacion y propiedades de contenedores             | [ver](/unidad-03-css/css/estilos.css) | [ver](recursos/Captura%20sesion%2016.png) |
-|  S17   | CSS Grid                   |  grid , areas y columns           | [ver](/unidad-03-css/css/estilos.css) | [ver](recursos/Captura%20sesion%2017.png) |
-|  S18   | Componentes estilizados    | estlizamos tarjetas con hover ,focus ,sombras etcs | [ver](/recursos/Captura%20sesion%2018.png |
+|  S17   | CSS Grid                   |  grid , areas y columns           | [ver](/unidad-03-css/luz-clara/index.html) | [ver](recursos/Captura%20sesion%2017.png) |
+|  S18   | Componentes estilizados    | estlizamos tarjetas con hover ,focus ,sombras etcs | [ver](recursos/Captura%20sesion%2018.png) |
 |  S19   | Animaciones y filtros      |  animaciones ,efectos filtros ykeyframe           | [ver](/unidad-03-css/css/estilos.css) | [ver](recursos/Captura%20de%20pantalla%20sesion%2019.png) |
 |  S20   | SCSS y repaso              |             | [ver](unidad-03/) | [ver](recursos/) |
 
@@ -157,7 +157,7 @@ Proyecto propio construido de forma autónoma.
 
 | Sesión | Tema                          | Qué aprendí |      Trabajo      |     Captura      |
 | :----: | :---------------------------- | :---------- | :---------------: | :--------------: |
-|  S31   | Librerías y frameworks        |             | [ver](unidad-05/) | [ver](recursos/) |
+|  S31   | Librerías y frameworks        |introduccion de frameworks y prueba diagnostica     | [ver](unidad-05-frameworks/index.html) | [ver](recursos/Captura%20unidad%20frameworks%20.png) |
 |  S32   | Sistema de rejilla I          |             | [ver](unidad-05/) | [ver](recursos/) |
 |  S33   | Sistema de rejilla II         |             | [ver](unidad-05/) | [ver](recursos/) |
 |  S34   | Tipografía y utilidades       |             | [ver](unidad-05/) | [ver](recursos/) |
